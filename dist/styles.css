@@ -17,3 +17,8 @@ html[data-theme=dark]{--ornament:#d0ac70}
 .portrait-wrap::before{content:"";position:absolute;z-index:0;right:-18px;top:-28px;width:92px;height:92px;background:url("icons/andalusian-rosette.svg") center/contain no-repeat;opacity:.3;pointer-events:none}
 .portrait-frame{z-index:1}
 @media(max-width:720px){.portrait-wrap::before{right:-2px;top:-12px;width:68px;height:68px}}
+
+/* A quiet zellige-style medallion breaks each long section rule. */
+.about,.work,.contact{position:relative}
+.about::before,.work::before,.contact::before{content:"";position:absolute;z-index:1;left:50%;top:-11px;width:24px;height:24px;transform:translateX(-50%);background-color:var(--bg);background-image:url("icons/section-rosette.svg");background-repeat:no-repeat;background-position:center;background-size:22px}
+html[data-theme=dark] .about::before,html[data-theme=dark] .work::before,html[data-theme=dark] .contact::before{background-image:url("icons/section-rosette-dark.svg")}
