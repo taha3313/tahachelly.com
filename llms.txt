@@ -1,0 +1,19 @@
+# Taha Chelly
+
+> Official personal website of Taha Chelly, a software engineer based in Sfax, Tunisia. He works at SpeakDuo on full-stack development and AI-powered language-learning experiences.
+
+## Profile
+
+- [Personal website](https://tahachelly.com/): Introduction, current work, selected skills, portrait, and contact links.
+- [Plain-text professional profile](https://tahachelly.com/profile.md): A concise factual profile in Markdown.
+
+## Official profiles
+
+- [LinkedIn](https://www.linkedin.com/in/taha-chelly-983629170/)
+- [GitHub](https://github.com/taha3313)
+
+## Contact
+
+- Email: chellytaha@gmail.com
+
+The site represents Taha Chelly personally. Skills and work descriptions are self-reported professional information, not independent assessments or endorsements.

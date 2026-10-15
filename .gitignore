@@ -1,0 +1,4 @@
+# Local browser QA artifacts
+.playwright-mcp/
+tahachelly-cloudflare.zip
+*:Zone.Identifier
