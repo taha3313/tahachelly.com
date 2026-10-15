@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" opacity=".04">
+  <g stroke="#b28a4f" stroke-width="1.25" stroke-linejoin="round">
+    <path d="M48 0 96 48 48 96 0 48 48 0Z"/>
+    <path d="M48 12 84 48 48 84 12 48 48 12Z"/>
+    <path d="M48 22 54 40 72 48 54 56 48 74 42 56 24 48 42 40 48 22Z" fill="#b28a4f" fill-opacity=".12"/>
+    <path d="M0 0 24 24 0 48m96-48L72 24l24 24M0 96l24-24L0 48m96 48L72 72l24-24"/>
+    <path d="M24 24 36 36m36 36L60 60M72 24 60 36M24 72l12-12"/>
+  </g>
+  <g fill="#5575a5" fill-opacity=".7">
+    <path d="m24 18 3 9 9 3-9 3-3 9-3-9-9-3 9-3 3-9Zm48 24 3 9 9 3-9 3-3 9-3-9-9-3 9-3 3-9ZM24 66l3 9 9 3-9 3-3 9-3-9-9-3 9-3 3-9Z"/>
+  </g>
+  <g stroke="#5575a5" stroke-width="1" stroke-opacity=".65">
+    <path d="M48 30v36M30 48h36M35 35l26 26m0-26L35 61"/>
+    <path d="M48 36 60 48 48 60 36 48 48 36Z"/>
+  </g>
+</svg>
