@@ -18,5 +18,7 @@ html[data-theme=dark]{--ornament:#d0ac70}
 .portrait-wrap::before{content:"";position:absolute;z-index:0;right:-18px;top:-28px;width:92px;height:92px;background:url("icons/andalusian-rosette.svg") center/contain no-repeat;opacity:.3;pointer-events:none}
 .portrait-frame{z-index:1}
 @media(max-width:720px){.portrait-wrap::before{right:-2px;top:-12px;width:68px;height:68px}}
-.arabesque-art{position:absolute;z-index:0;left:-42px;top:-48px;width:185px;height:auto;opacity:.88;pointer-events:none;filter:drop-shadow(0 2px 5px #15213616)}
-@media(max-width:720px){.arabesque-art{left:-14px;top:-34px;width:128px;opacity:.78}}
+/* A restrained floral arabesque softens section breaks without interrupting the layout. */
+.about,.work,.contact{position:relative}
+.about::before,.work::before,.contact::before{content:"";position:absolute;z-index:1;left:50%;top:-15px;width:112px;height:30px;transform:translateX(-50%);background-color:var(--bg);background-image:url("icons/section-flourish.svg");background-repeat:no-repeat;background-position:center;background-size:contain;pointer-events:none}
+@media(max-width:720px){.about::before,.work::before,.contact::before{top:-13px;width:96px;height:26px}}
