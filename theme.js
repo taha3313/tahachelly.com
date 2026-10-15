@@ -4,7 +4,7 @@ function updateToggle() {
   const dark = document.documentElement.dataset.theme === 'dark';
   toggle.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} mode`);
   toggle.title = toggle.getAttribute('aria-label');
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#111a19' : '#f7f3e9';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#0c111d' : '#f8fafc';
 }
 toggle.addEventListener('click', () => {
   const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';

@@ -8,23 +8,12 @@
 .toolkit>div>span{display:inline-flex;align-items:center;gap:7px;min-height:32px;padding:7px 11px;white-space:nowrap}.toolkit-icon{display:block;width:15px;height:15px;object-fit:contain;flex:none}
 
 .focus-tags span{display:inline-flex;align-items:center;gap:6px}.focus-icon{display:block;width:14px;height:14px;flex:none}
-
-/* Mediterranean palette and restrained Andalusian details */
-:root{color-scheme:light;--bg:#f7f3e9;--surface:#fffdf7;--ink:#1c2c32;--muted:#657472;--line:#e4ddcf;--accent:#157467;--tint:#eaf1e9;--shadow:0 12px 38px #262d200d;--ornament:#b79258;--radius:14px}
-html[data-theme=dark]{color-scheme:dark;--bg:#111a19;--surface:#192321;--ink:#f1eee5;--muted:#a8b4ab;--line:#34413a;--accent:#8dc7ad;--tint:#253a31;--shadow:0 12px 40px #0004;--ornament:#d0ac70}
-.button{background:var(--accent);border-color:var(--accent)}.button:hover{filter:brightness(.92)}
+/* Keep the portfolio's original software-focused visual language, with quiet cultural accents */
+:root{--ornament:#a9894f}
+html[data-theme=dark]{--ornament:#d0ac70}
+.button{background:#245de5;border-color:#245de5;color:#fff}.button:hover{background:#174bc5;filter:none}
 .intro-arabic{display:inline-block;margin-left:4px;color:var(--ornament);font-family:"Noto Naskh Arabic","Amiri","Traditional Arabic",serif;font-size:16px;line-height:1;letter-spacing:0;transform:translateY(-1px)}
-.hero h1>span{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:-2px}
-.about-text,.section-heading h2{font-family:Georgia,"Times New Roman",serif}
-.about-text{letter-spacing:-.2px}
-.contact h2>span{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:-.6px}
 .portrait-wrap{isolation:isolate}
-.portrait-wrap::before{content:"";position:absolute;z-index:0;right:-42px;top:-38px;width:132px;height:132px;background:url("icons/andalusian-rosette.svg") center/contain no-repeat;opacity:.8;pointer-events:none}
-.portrait-frame{position:relative;z-index:1;border:1px solid color-mix(in srgb,var(--ornament) 48%,transparent);border-radius:48% 48% 12px 12px/22% 22% 12px 12px;box-shadow:0 0 0 7px color-mix(in srgb,var(--ornament) 10%,transparent),var(--shadow)}
-.portrait-note{position:relative;z-index:1}
-.culture-note{display:flex;align-items:center;gap:10px;margin:22px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
-.culture-note>span:last-child{display:grid;gap:1px}.culture-note strong{color:var(--ornament);font-size:9px;font-weight:650;letter-spacing:1px;text-transform:uppercase}
-.culture-note-mark{display:grid;place-items:center;width:30px;height:30px;flex:none;border:1px solid color-mix(in srgb,var(--ornament) 50%,transparent);border-radius:50%;color:var(--ornament);font-size:15px}
-@media(max-width:720px){.portrait-wrap::before{right:-10px;top:-20px;width:96px;height:96px}.culture-note{font-size:11px}.hero h1>span{letter-spacing:-1.4px}}
-@media(prefers-reduced-motion:reduce){.button:hover{filter:none}}
-.culture-note-mark img{display:block;width:17px;height:17px;object-fit:contain}
+.portrait-wrap::before{content:"";position:absolute;z-index:0;right:-18px;top:-28px;width:92px;height:92px;background:url("icons/andalusian-rosette.svg") center/contain no-repeat;opacity:.3;pointer-events:none}
+.portrait-frame{z-index:1}
+@media(max-width:720px){.portrait-wrap::before{right:-2px;top:-12px;width:68px;height:68px}}
