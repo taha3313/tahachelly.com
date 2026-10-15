@@ -20,5 +20,5 @@ html[data-theme=dark]{--ornament:#d0ac70}
 @media(max-width:720px){.portrait-wrap::before{right:-2px;top:-12px;width:68px;height:68px}}
 /* A small geometric zellige inlay ties section rules into the page-wide mosaic. */
 .about,.work,.contact{position:relative}
-.about::before,.work::before,.contact::before{content:"";position:absolute;z-index:1;left:50%;top:-17px;width:136px;height:34px;transform:translateX(-50%);background-color:var(--bg);background-image:url("icons/section-mosaic.svg");background-repeat:no-repeat;background-position:center;background-size:contain;pointer-events:none}
+.about::before,.work::before,.contact::before{content:"";position:absolute;z-index:1;left:50%;top:-17px;width:136px;height:34px;transform:translateX(-50%);background-color:var(--bg);background-image:url("icons/section-mosaic.svg?v=separator-2026-10-15");background-repeat:no-repeat;background-position:center;background-size:contain;pointer-events:none}
 @media(max-width:720px){.about::before,.work::before,.contact::before{top:-14px;width:112px;height:28px}}
