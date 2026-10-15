@@ -12,7 +12,8 @@
 :root{--ornament:#a9894f}
 html[data-theme=dark]{--ornament:#d0ac70}
 .button{background:#245de5;border-color:#245de5;color:#fff}.button:hover{background:#174bc5;filter:none}
-.intro-arabic{display:inline-block;margin-left:4px;color:var(--ornament);font-family:"Noto Naskh Arabic","Amiri","Traditional Arabic",serif;font-size:16px;line-height:1;letter-spacing:0;transform:translateY(-1px)}
+@font-face{font-family:Amiri;src:url("fonts/amiri-arabic.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+.intro-arabic{display:inline-block;margin-left:5px;color:var(--ornament);font-family:Amiri,"Noto Naskh Arabic","Traditional Arabic",serif;font-size:21px;font-weight:400;line-height:1;letter-spacing:0;transform:translateY(2px)}
 .portrait-wrap{isolation:isolate}
 .portrait-wrap::before{content:"";position:absolute;z-index:0;right:-18px;top:-28px;width:92px;height:92px;background:url("icons/andalusian-rosette.svg") center/contain no-repeat;opacity:.3;pointer-events:none}
 .portrait-frame{z-index:1}
