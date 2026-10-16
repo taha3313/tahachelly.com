@@ -2,3 +2,6 @@
 .playwright-mcp/
 tahachelly-cloudflare.zip
 *:Zone.Identifier
+
+# Private project notes
+/docs/
