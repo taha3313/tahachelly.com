@@ -5,3 +5,8 @@ tahachelly-cloudflare.zip
 
 # Private project notes
 /docs/
+
+# Astro dependencies and generated staging assets
+node_modules/
+.astro/
+public/
