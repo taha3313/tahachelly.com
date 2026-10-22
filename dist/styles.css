@@ -13,7 +13,9 @@
 html[data-theme=dark]{--ornament:#d0ac70}
 .button{background:#245de5;border-color:#245de5;color:#fff}.button:hover{background:#174bc5;filter:none}
 @font-face{font-family:Amiri;src:url("fonts/amiri-arabic.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap;unicode-range:U+0623,U+0627,U+0628,U+062D,U+0644,U+0645,U+0647,U+064A,U+0651,U+FE8E,U+FE91,U+FE92,U+FEA3,U+FEA4,U+FEE0,U+FEE2,U+FEE3,U+FEE4,U+FEE7,U+FEE8,U+FEF2,U+FEF3,U+FEF4,U+FEF5,U+FEF6,U+FEF7,U+FEF8,U+FEF9,U+FEFA,U+FEFB,U+FEFC}
-.intro-arabic{font-family:Amiri,"Noto Naskh Arabic","Traditional Arabic",serif;display:inline-block;margin-left:5px;color:var(--ornament);font-family:Amiri,"Noto Naskh Arabic","Traditional Arabic",serif;font-size:21px;font-weight:400;line-height:1;letter-spacing:0;transform:translateY(2px)}
+/* Greeting subset includes Arabic shaping and vowel marks without loading the full font. */
+@font-face{font-family:"Amiri Greeting";src:url("/fonts/amiri-greeting.woff2?v=2026-10-22") format("woff2");font-style:normal;font-weight:400;font-display:swap;unicode-range:U+0020,U+0623,U+0627,U+0633,U+0644,U+0647,U+0648,U+064B,U+064E}
+.intro-arabic{font-family:"Amiri Greeting","Noto Naskh Arabic","Traditional Arabic",serif;display:inline-block;margin-left:5px;color:var(--ornament);font-size:21px;font-weight:400;line-height:1;letter-spacing:0;transform:translateY(2px)}
 .portrait-wrap{isolation:isolate}
 .portrait-wrap::before{content:"";position:absolute;z-index:0;right:-18px;top:-28px;width:92px;height:92px;background:url("icons/andalusian-rosette.svg") center/contain no-repeat;opacity:.3;pointer-events:none}
 .portrait-frame{z-index:1}
