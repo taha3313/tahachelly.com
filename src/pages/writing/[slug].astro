@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { stories } from '../../data/stories';
+export function getStaticPaths() { return stories.map(story => ({ params: { slug: story.slug }, props: { story } })); }
+const { story } = Astro.props;
+---
+<Base title={`${story.title} | Taha Chelly`} description={story.summary} article>
+  <article class="engineering-article" lang="en" dir="ltr">
+    <a class="text-link" href="/#writing">← All engineering notes</a>
+    <p class="section-kicker">{story.project} · Engineering note</p>
+    <h1 id="hero-title" tabindex="-1">{story.title}</h1>
+    <p class="hero-description">{story.summary}</p>
+    <p class="article-context">A technical walkthrough of the implementation and evidence documented in the project repository.</p>
+    {story.sections.map(section => <section><h2>{section.title}</h2><p>{section.text}</p></section>)}
+    <div class="article-sources"><h2>Explore the implementation</h2><p><a href={story.source}>Project README ↗</a> · <a href={story.evidence}>Evaluation and evidence ↗</a></p><a class="text-link" href={story.projectUrl}>Explore {story.project} →</a></div>
+  </article>
+</Base>

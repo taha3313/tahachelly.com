@@ -1,0 +1,21 @@
+---
+interface Props { project: 'qafiya' | 'quranic-shazam'; }
+const { project } = Astro.props;
+const qafiya = project === 'qafiya';
+const decisions = qafiya ? [
+  ['A small model, a bounded runtime', 'An approximately 4.8 MB CPU ONNX model and one shared inference session keep vocalization practical on a small server. The documented local container workload peaked at 142.55 MiB process RSS under a 512 MiB cap; public traffic can behave differently.'],
+  ['Vowels affect the verdict', 'Preserve supplied vowel marks, disclose automatic completions, and keep the original input available. In the documented 12-verse sample, partial-source meter matches improved from 2/12 to 10/12, while fully bare input reached 2/12.'],
+  ['Repair only what failed', 'A bounded revision loop preserves accepted verses and sound hemistichs. Matching meter and rawi does not certify poetic quality or full classical rhyme. Public AI generation remains disabled.'],
+] : [
+  ['Separate voices from words', 'Speaker embeddings rank 20 reciter profiles; a Quran-tuned Whisper pipeline matches transcribed words against 6,236 verses. Each pipeline answers a different question.'],
+  ['Wait when the evidence is ambiguous', 'Progressive listening adds context up to 60 seconds instead of forcing an early verse match. Uncertain results remain visibly uncertain; inference runs off the API event loop.'],
+  ['Evaluate on held-out material', 'The September 2026 offline reciter benchmark reports 97.31% top-1 accuracy on 781 clips, with disjoint profile and evaluation surahs. This does not measure verse accuracy or guarantee results on arbitrary recordings.'],
+];
+const repo = qafiya ? 'arabic-poetry' : 'quranic-shazam';
+---
+<section class="project-section" aria-labelledby="decisions-title">
+  <div class="section-heading"><span class="section-kicker" data-i18n="decisionsKicker">CHALLENGES & TRADEOFFS</span><h2 id="decisions-title" data-i18n="decisionsTitle">Why it works this way.</h2></div>
+  <div class="project-features" lang="en" dir="ltr">{decisions.map(([title, text]) => <article><h3>{title}</h3><p>{text}</p></article>)}</div>
+  <p class="evidence-link" lang="en" dir="ltr">Based on the <a href={`https://github.com/taha3313/${repo}#readme`}>project README and linked evaluations ↗</a>.</p>
+  <a class="text-link" href={`/writing/${qafiya ? 'arabic-prosody-on-a-small-server' : 'recognition-with-uncertainty'}/`} data-i18n="readNote">Read the engineering note →</a>
+</section>

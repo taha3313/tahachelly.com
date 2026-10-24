@@ -1,0 +1,7 @@
+---
+import { stories } from '../data/stories';
+---
+<section class="writing project-section" id="writing" aria-labelledby="writing-title">
+  <div class="section-heading"><span class="section-kicker" data-i18n="writingKicker">ENGINEERING NOTES</span><h2 id="writing-title" data-i18n="writingTitle">The decisions behind the demo.</h2></div>
+  <div class="notes-grid">{stories.map(story => <article class="engineering-note" lang="en" dir="ltr"><span class="section-kicker">{story.project}</span><h3><a href={`/writing/${story.slug}/`}>{story.title}</a></h3><p>{story.summary}</p><a class="text-link" href={`/writing/${story.slug}/`}>Read the engineering note →</a></article>)}</div>
+</section>

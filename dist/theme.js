@@ -280,6 +280,14 @@ for (const [locale, copy] of Object.entries(projectTranslations)) Object.assign(
 for (const [locale, copy] of Object.entries(qafiyaTranslations)) Object.assign(translations[locale], copy);
 translations.fr.navWork = "Travail";
 
+const engineeringTranslations = {
+"en":{"downloadCV":"Download CV","contactIntent":"I’m looking for a full-time Python developer role, building reliable backend services and AI applications. If that fits your team, let’s talk.","employmentDates":"Software Engineer · Jul 2026 — Present","internshipDates":"Previously: end-of-studies internship at SpeakDuo · Jan — Jul 2026.","achievementFeedback":"Developed multilingual grammar and pronunciation feedback, lesson generation, and personalized practice for the production platform.","achievementPractice":"Built vocabulary tracking, spaced repetition exercises, and Elo-based CEFR assessment to support adaptive learning.","achievementVoice":"Implemented a multilingual LiveKit voice interview agent and optimized speech recognition for real-time captions using voice activity detection.","achievementMultiplayer":"Delivered AI chat, personal grammar practice, and synchronized multiplayer learning activities across the backend and web app.","writingKicker":"ENGINEERING NOTES","writingTitle":"The decisions behind the demo.","decisionsKicker":"CHALLENGES & TRADEOFFS","decisionsTitle":"Why it works this way.","readNote":"Read the engineering note →"},
+"fr":{"downloadCV":"Télécharger le CV","contactIntent":"Je recherche un poste de développeur Python à temps plein pour construire des services backend fiables et des applications d’IA. Si cela correspond à votre équipe, parlons-en.","employmentDates":"Ingénieur logiciel · Juil. 2026 — Aujourd’hui","internshipDates":"Auparavant : stage de fin d’études chez SpeakDuo · Janv. — Juil. 2026.","achievementFeedback":"Développement de retours multilingues sur la grammaire et la prononciation, de génération de leçons et de pratique personnalisée pour la plateforme en production.","achievementPractice":"Création du suivi du vocabulaire, d’exercices de répétition espacée et d’une évaluation CECR fondée sur Elo pour l’apprentissage adaptatif.","achievementVoice":"Implémentation d’un agent d’entretien vocal multilingue avec LiveKit et optimisation de la reconnaissance vocale pour les sous-titres en direct grâce à la détection d’activité vocale.","achievementMultiplayer":"Livraison du chat IA, de la pratique grammaticale personnelle et d’activités d’apprentissage multijoueurs synchronisées, du backend à l’application web.","writingKicker":"NOTES TECHNIQUES","writingTitle":"Les décisions derrière la démo.","decisionsKicker":"DÉFIS ET COMPROMIS","decisionsTitle":"Pourquoi ces choix techniques.","readNote":"Lire la note technique en anglais →"},
+"ar":{"downloadCV":"تنزيل السيرة الذاتية","contactIntent":"أبحث عن وظيفة مطوّر Python بدوام كامل لبناء خدمات خلفية موثوقة وتطبيقات ذكاء اصطناعي. إذا كان هذا يناسب فريقكم، فلنتحدث.","employmentDates":"مهندس برمجيات · يوليو 2026 — الآن","internshipDates":"سابقًا: تدريب نهاية الدراسة في SpeakDuo · يناير — يوليو 2026.","achievementFeedback":"طوّرت ملاحظات متعددة اللغات حول القواعد والنطق، وتوليد الدروس والتدريب المخصّص للمنصة المستخدمة فعليًا.","achievementPractice":"بنيت تتبّع المفردات وتمارين التكرار المتباعد وتقييم CEFR القائم على Elo لدعم التعلّم التكيّفي.","achievementVoice":"نفّذت وكيل مقابلات صوتية متعدد اللغات باستخدام LiveKit وحسّنت التعرّف على الكلام للنصوص المباشرة باستخدام كشف النشاط الصوتي.","achievementMultiplayer":"أنجزت محادثة الذكاء الاصطناعي والتدريب الشخصي على القواعد وأنشطة تعلّم جماعية متزامنة عبر الخلفية وتطبيق الويب.","writingKicker":"ملاحظات هندسية","writingTitle":"القرارات وراء التجربة.","decisionsKicker":"التحديات والموازنات","decisionsTitle":"لماذا هذه الخيارات التقنية؟","readNote":"اقرأ الملاحظة الهندسية بالإنجليزية ←"}
+}
+;
+for (const [locale, copy] of Object.entries(engineeringTranslations)) Object.assign(translations[locale], copy);
+
 const languageSelect = document.querySelector('.language-select');
 const languageNames = {en:'English',ar:'العربية',es:'Español',de:'Deutsch',fr:'Français',it:'Italiano',zh:'中文',ja:'日本語'};
 function setLanguage(language) {
@@ -290,7 +298,12 @@ function setLanguage(language) {
   document.documentElement.dir = rtl ? 'rtl' : 'ltr';
   document.documentElement.dataset.language = locale;
   document.querySelectorAll('[data-i18n]').forEach(element => {
-    const value = dictionary[element.dataset.i18n];
+    const key = element.dataset.i18n;
+    const value = dictionary[key] ?? engineeringTranslations.en[key];
+    if (engineeringTranslations.en[key] !== undefined) {
+      element.lang = dictionary[key] !== undefined ? (locale === 'zh' ? 'zh-CN' : locale) : 'en';
+      element.dir = element.lang === 'ar' ? 'rtl' : 'ltr';
+    }
     if (value !== undefined) element.textContent = value;
   });
   document.querySelectorAll('[data-i18n-html]').forEach(element => {

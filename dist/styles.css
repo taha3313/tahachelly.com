@@ -66,3 +66,28 @@ html[data-theme=dark] body{background-image:url("icons/andalusian-zellige-dark.s
 .project-copy .stack-tags li{font-size:9px;padding:5px 8px}
 .project-copy .text-link{min-height:32px;font-size:11px}
 @media(max-width:720px){.projects{padding-block:40px}.project-grid{grid-template-columns:1fr;gap:16px}.project-preview{aspect-ratio:16/8}.project-copy{padding:18px 20px 20px}.project-copy h3{font-size:20px}}
+
+/* CV, contributions, and engineering notes */
+.hero-actions{flex-wrap:wrap}
+.work-achievements{padding-inline-start:1.2rem;margin:1.5rem 0;line-height:1.8;color:var(--muted)}
+.work-achievements li+li{margin-top:.7rem}
+.career-note,.article-context,.evidence-link{font-size:.9rem;line-height:1.7;color:var(--muted)}
+.contact-intent{max-width:40ch;line-height:1.8;color:var(--muted);margin:1.5rem 0}
+.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.engineering-note{border:1px solid var(--line);border-radius:18px;padding:2rem}
+.engineering-note h3{font-size:1.45rem;line-height:1.35;margin:1rem 0}
+.engineering-note h3 a{color:inherit;text-decoration:none}
+.engineering-note p{color:var(--muted);line-height:1.8;margin-bottom:1.5rem}
+.engineering-article{max-width:760px;margin:5rem auto 7rem}
+.engineering-article> .section-kicker{margin-top:2.5rem}
+.engineering-article h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.15;letter-spacing:-.04em;margin:1rem 0 1.5rem}
+.engineering-article section,.article-sources{margin-top:3rem}
+.engineering-article h2{font-size:1.5rem;line-height:1.35;margin-bottom:1rem}
+.engineering-article section p,.article-sources p{line-height:1.9;color:var(--muted)}
+.engineering-article a,.evidence-link a{color:var(--accent);text-underline-offset:4px}
+.evidence-link{margin-top:1.5rem}
+@media(max-width:640px){.notes-grid{grid-template-columns:1fr}.engineering-note{padding:1.4rem}.engineering-article{margin-top:3rem}.work-bottom{flex-wrap:wrap;gap:.5rem}}
+.work-body .work-achievements,.work-body .career-note{grid-column:1/-1}
+.work-body .work-achievements{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 2.5rem;margin:.5rem 0 0}
+.work-body .work-achievements li+li{margin-top:0}
+@media(max-width:640px){.work-body .work-achievements{grid-template-columns:1fr}}
