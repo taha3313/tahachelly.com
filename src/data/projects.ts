@@ -1,8 +1,24 @@
-export const projects = [{
-  slug: 'quranic-shazam',
-  name: 'Quranic Shazam',
-  github: 'https://github.com/taha3313/quranic-shazam',
-  demo: 'https://quranicshazam.tahachelly.com/',
-  screenshots: ['/projects/quranic-shazam-home.png', '/projects/quranic-shazam-verse.png'],
-  stack: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS 4', 'Python', 'FastAPI', 'ONNX Runtime', 'faster-whisper', 'Docker', 'Render'],
-}];
+export const projects = [
+  {
+    slug: 'quranic-shazam',
+    name: 'Quranic Shazam',
+    github: 'https://github.com/taha3313/quranic-shazam',
+    demo: 'https://quranicshazam.tahachelly.com/',
+    screenshots: ['/projects/quranic-shazam-home.png', '/projects/quranic-shazam-verse.png'],
+    stack: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS 4', 'Python', 'FastAPI', 'ONNX Runtime', 'faster-whisper', 'Docker', 'Render'],
+    cardStack: ['React', 'TypeScript', 'FastAPI', 'ONNX', 'Whisper'],
+    categoryKey: 'projectCategory',
+    summaryKey: 'projectSummary',
+  },
+  {
+    slug: 'qafiya',
+    name: 'Qafiya · قافية',
+    github: 'https://github.com/taha3313/arabic-poetry',
+    demo: 'https://qafiya.tahachelly.com/',
+    screenshots: ['/projects/qafiya-desktop.png', '/projects/qafiya-mobile.png'],
+    stack: ['React 19', 'TypeScript', 'Vite', 'Python 3.12', 'FastAPI', 'PyArud', 'ONNX Runtime', 'NumPy', 'Docker', 'Cloudflare Pages', 'Render'],
+    cardStack: ['React', 'TypeScript', 'FastAPI', 'PyArud', 'ONNX'],
+    categoryKey: 'qafiyaCategory',
+    summaryKey: 'qafiyaSummary',
+  },
+];

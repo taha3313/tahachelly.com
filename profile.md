@@ -16,6 +16,11 @@ Taha Chelly is a software engineer based in Sfax, Tunisia. His experience spans 
 
 Python, FastAPI, React, TypeScript, PostgreSQL, LiveKit, Docker, LLM applications, and real-time experiences.
 
+## Selected projects
+
+- [Quranic Shazam](https://tahachelly.com/projects/quranic-shazam/): Identify Quran recitations from audio and explore the matching verse.
+- [Qafiya](https://tahachelly.com/projects/qafiya/): Analyze Arabic poetry against classical meters, inspect rhyme, and add vocalization locally.
+
 ## Official profiles and contact
 
 - LinkedIn: https://www.linkedin.com/in/taha-chelly-983629170/

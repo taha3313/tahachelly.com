@@ -7,6 +7,11 @@
 - [Personal website](https://tahachelly.com/): Introduction, current work, selected skills, portrait, and contact links.
 - [Plain-text professional profile](https://tahachelly.com/profile.md): A concise factual profile in Markdown.
 
+## Selected projects
+
+- [Quranic Shazam](https://tahachelly.com/projects/quranic-shazam/): Identify Quran recitations from audio and explore the matching verse.
+- [Qafiya](https://tahachelly.com/projects/qafiya/): Analyze Arabic poetry against classical meters, inspect rhyme, and add vocalization locally.
+
 ## Official profiles
 
 - [LinkedIn](https://www.linkedin.com/in/taha-chelly-983629170/)
