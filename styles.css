@@ -46,3 +46,20 @@ html[data-theme=dark] body{background-image:url("icons/andalusian-zellige-dark.s
 .stack-large li{display:inline-flex;align-items:center;gap:8px}.stack-large .detail-icon{width:16px;height:16px;color:var(--accent)}
 .screenshot-grid figcaption{display:flex;align-items:flex-start;gap:8px}.screenshot-grid figcaption .detail-icon{margin-top:2px;color:var(--accent)}
 .stack-details p{display:flex;align-items:flex-start;gap:10px}.stack-details .detail-icon{margin-top:4px;color:var(--accent)}
+
+/* Keep selected work compact so both projects sit together on the homepage. */
+.projects{padding-block:44px 56px}
+.projects .section-heading h2{margin-bottom:24px}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.project-card{grid-template-columns:1fr;align-content:start}
+.project-preview{aspect-ratio:16/9}
+.project-preview img{height:100%;object-fit:cover;object-position:top}
+.preview-label{inset-inline-start:14px;bottom:14px;padding:7px 10px}
+.project-copy{padding:20px 22px 22px;align-self:auto}
+.project-copy .section-kicker{font-size:8px}
+.project-copy h3{font-size:21px;margin:9px 0 7px}
+.project-copy p{font-size:12px;line-height:1.7;margin:0}
+.project-copy .stack-tags{gap:6px;margin:14px 0 8px}
+.project-copy .stack-tags li{font-size:9px;padding:5px 8px}
+.project-copy .text-link{min-height:32px;font-size:11px}
+@media(max-width:720px){.projects{padding-block:40px}.project-grid{grid-template-columns:1fr;gap:16px}.project-preview{aspect-ratio:16/8}.project-copy{padding:18px 20px 20px}.project-copy h3{font-size:20px}}
