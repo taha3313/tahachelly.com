@@ -47,7 +47,8 @@ html[data-theme=dark] body{background-image:url("icons/andalusian-zellige-dark.s
 .screenshot-grid figcaption{display:flex;align-items:flex-start;gap:8px}.screenshot-grid figcaption .detail-icon{margin-top:2px;color:var(--accent)}
 .stack-details p{display:flex;align-items:flex-start;gap:10px}.stack-details .detail-icon{margin-top:4px;color:var(--accent)}
 
-@media(max-width:720px){.mobile-screenshot>a{display:block;height:440px;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}.mobile-screenshot img{height:100%;object-fit:cover;object-position:top center;border:0;border-radius:0}}
+.mobile-screenshot>a{display:block;height:500px;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.mobile-screenshot img{height:100%;object-fit:cover;object-position:center 34%;border:0;border-radius:0}
 
 /* Keep selected work compact so both projects sit together on the homepage. */
 .projects{padding-block:44px 56px}
