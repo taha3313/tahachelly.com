@@ -1,0 +1,10 @@
+---
+import { stories } from '../data/stories';
+interface Props { project: 'qafiya' | 'quranic-shazam'; }
+const { project } = Astro.props;
+const story = stories[project === 'qafiya' ? 1 : 0];
+---
+<aside class="project-note-callout" aria-labelledby="project-note-title" lang="en" dir="ltr">
+  <div><span class="section-kicker">ENGINEERING NOTE · 3 MIN READ</span><h2 id="project-note-title"><a href={`/writing/${story.slug}/`}>{story.title}</a></h2><p>{story.summary}</p></div>
+  <a class="button" href={`/writing/${story.slug}/`}>Read the engineering note <span aria-hidden="true">→</span></a>
+</aside>

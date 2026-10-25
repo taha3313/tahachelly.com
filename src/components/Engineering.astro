@@ -17,5 +17,4 @@ const repo = qafiya ? 'arabic-poetry' : 'quranic-shazam';
   <div class="section-heading"><span class="section-kicker" data-i18n="decisionsKicker">CHALLENGES & TRADEOFFS</span><h2 id="decisions-title" data-i18n="decisionsTitle">Why it works this way.</h2></div>
   <div class="project-features" lang="en" dir="ltr">{decisions.map(([title, text]) => <article><h3>{title}</h3><p>{text}</p></article>)}</div>
   <p class="evidence-link" lang="en" dir="ltr">Based on the <a href={`https://github.com/taha3313/${repo}#readme`}>project README and linked evaluations ↗</a>.</p>
-  <a class="text-link" href={`/writing/${qafiya ? 'arabic-prosody-on-a-small-server' : 'recognition-with-uncertainty'}/`} data-i18n="readNote">Read the engineering note →</a>
 </section>
