@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { stories } from '../../data/stories';
+import NotebookList from '../../components/NotebookList.astro';
 import en from '../../data/i18n/en.json';
 ---
 <Base title="Engineering notebook | Taha Chelly" description="Engineering decisions, practical tradeoffs, and evaluation evidence from projects by Taha Chelly." notebook>
   <section class="notebook-index" data-notebook-index aria-labelledby="hero-title">
     <div class="notebook-heading"><p class="section-kicker">Taha Chelly</p><h1 id="hero-title" tabindex="-1" data-i18n="notebookTitle">{en.notebookTitle}</h1><p data-i18n="writingTitle">{en.writingTitle}</p></div>
-    <div class="notebook-list">{stories.map((story,i) => <article><div class="notebook-author"><img src="/taha.webp" width="24" height="24" alt="" /><span>Taha Chelly</span><span aria-hidden="true">·</span><span>{story.project}</span></div><h2><a href={`/writing/${story.slug}/`} data-i18n={`story${i}Title`}>{story.title}</a></h2><p data-i18n={`story${i}Summary`}>{story.summary}</p><div class="notebook-list-meta"><span data-i18n="readingTime">{en.readingTime}</span><a href={`/writing/${story.slug}/`} data-i18n="readNote">{en.readNote}</a></div></article>)}</div>
+    <NotebookList />
   </section>
 </Base>

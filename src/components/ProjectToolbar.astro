@@ -1,0 +1,22 @@
+---
+import Icon from './Icon.astro';
+import en from '../data/i18n/en.json';
+interface Props { demo: string; github: string; }
+const { demo, github } = Astro.props;
+const sections = [
+  ['screenshots-title', 'projectScreenshots'],
+  ['approach-title', 'projectArchitecture'],
+  ['stack-title', 'technologyLabel'],
+  ['decisions-title', 'projectDecisions'],
+];
+const copy: Record<string, string> = en;
+---
+<div class="project-toolbar">
+  <div class="project-toolbar-actions">
+    <a class="button" href={demo} target="_blank" rel="noopener noreferrer"><Icon name="globe" /><span data-i18n="liveDemo">{en.liveDemo}</span><span aria-hidden="true">↗</span></a>
+    <a class="secondary-button" href={github} target="_blank" rel="noopener noreferrer"><Icon name="code" /><span data-i18n="sourceCode">{en.sourceCode}</span><span aria-hidden="true">↗</span></a>
+  </div>
+  <nav aria-label={en.projectSectionsLabel} data-i18n-aria="projectSectionsLabel">
+    {sections.map(([id, key]) => <a href={`#${id}`} data-i18n={key}>{copy[key]}</a>)}
+  </nav>
+</div>

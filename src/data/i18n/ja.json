@@ -127,5 +127,11 @@
   "technologyLabel": "技術",
   "contactLinksLabel": "連絡先とソーシャルリンク",
   "homeLabel": "Taha Chelly ホーム",
-  "browseNotebook": "ノート一覧を見る"
+  "browseNotebook": "ノート一覧を見る",
+  "navNotebook": "ノート",
+  "sectionLink": "このセクションへのリンク",
+  "projectSectionsLabel": "プロジェクトの構成",
+  "projectScreenshots": "画面",
+  "projectArchitecture": "仕組み",
+  "projectDecisions": "技術的な判断"
 }

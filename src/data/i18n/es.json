@@ -127,5 +127,11 @@
   "technologyLabel": "Tecnologías",
   "contactLinksLabel": "Contacto y redes sociales",
   "homeLabel": "Inicio de Taha Chelly",
-  "browseNotebook": "Explorar el cuaderno"
+  "browseNotebook": "Explorar el cuaderno",
+  "navNotebook": "Cuaderno",
+  "sectionLink": "Enlace a esta sección",
+  "projectSectionsLabel": "Secciones del proyecto",
+  "projectScreenshots": "Capturas",
+  "projectArchitecture": "Cómo funciona",
+  "projectDecisions": "Decisiones"
 }

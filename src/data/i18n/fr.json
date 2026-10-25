@@ -127,5 +127,11 @@
   "technologyLabel": "Technologies",
   "contactLinksLabel": "Contact et réseaux sociaux",
   "homeLabel": "Accueil de Taha Chelly",
-  "browseNotebook": "Parcourir le carnet"
+  "browseNotebook": "Parcourir le carnet",
+  "navNotebook": "Carnet",
+  "sectionLink": "Lien vers cette section",
+  "projectSectionsLabel": "Rubriques du projet",
+  "projectScreenshots": "Captures",
+  "projectArchitecture": "Fonctionnement",
+  "projectDecisions": "Choix techniques"
 }

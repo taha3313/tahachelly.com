@@ -97,8 +97,13 @@ function setLanguage(language) {
   });
   languageSelect.value = locale;
   languageSelect.setAttribute('aria-label', dictionary.languageLabel);
-  document.querySelector('nav').setAttribute('aria-label', dictionary.navAbout + ' / ' + dictionary.navWork + ' / ' + dictionary.navProjects + ' / ' + dictionary.navContact);
+  document.querySelector('header nav').setAttribute('aria-label', ['navAbout','navWork','navProjects','navNotebook','navContact'].map(key => dictionary[key]).join(' / '));
   document.querySelector('.skip-link').textContent = locale === 'en' ? 'Skip to main content' : ({ar:'انتقل إلى المحتوى الرئيسي',es:'Saltar al contenido principal',de:'Zum Hauptinhalt springen',fr:'Aller au contenu principal',it:'Vai al contenuto principale',zh:'跳转到主要内容',ja:'メインコンテンツへ移動'})[locale];
+  document.querySelectorAll('.heading-permalink').forEach(link => {
+    const heading = link.closest('h2').querySelector('[data-i18n]').textContent;
+    link.setAttribute('aria-label', `${dictionary.sectionLink}: ${heading}`);
+  });
+  requestAnimationFrame(updateReadingNavigation);
   try { localStorage.setItem('language', locale); } catch {}
 }
 let savedLanguage = 'en';
@@ -106,16 +111,54 @@ try { savedLanguage = localStorage.getItem('language') || 'en'; } catch {}
 setLanguage(savedLanguage);
 languageSelect.addEventListener('change', event => setLanguage(event.target.value));
 
-// A quiet reading-position indicator; no continuous animation or tracking.
-const progress = document.querySelector('.reading-progress span');
-if (progress) {
-  const updateReadingProgress = () => {
-    const article = document.querySelector('.engineering-article');
-    const start = article.offsetTop;
+// Keep the reading position, section links, and sticky toolbar in sync.
+function markCurrentSection(links, sections) {
+  if (!sections.length) return;
+  let current = sections[0].id;
+  const threshold = Math.max(140, innerHeight * 0.28);
+  for (const section of sections) if (section.getBoundingClientRect().top <= threshold) current = section.id;
+  if (scrollY + innerHeight >= document.documentElement.scrollHeight - 4) current = sections.at(-1).id;
+  links.forEach(link => {
+    if (link.hash === `#${current}`) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+}
+function updateReadingNavigation() {
+  const article = document.querySelector('.engineering-article');
+  if (article) {
+    const progress = document.querySelector('.reading-progress span');
     const distance = Math.max(1, article.offsetHeight - innerHeight);
-    progress.style.transform = `scaleX(${Math.max(0, Math.min(1, (scrollY - start) / distance))})`;
+    progress.style.transform = `scaleX(${Math.max(0, Math.min(1, (scrollY - article.offsetTop) / distance))})`;
+    markCurrentSection(document.querySelectorAll('.article-contents a'), [...document.querySelectorAll('.article-prose section')]);
+  }
+  const toolbar = document.querySelector('.project-toolbar');
+  if (toolbar) {
+    document.documentElement.style.setProperty('--project-toolbar-height', `${toolbar.offsetHeight}px`);
+    const links = [...toolbar.querySelectorAll('nav a')];
+    markCurrentSection(links, links.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean));
+  }
+}
+const contents = document.querySelector('.article-contents');
+if (contents) {
+  const wideScreen = matchMedia('(min-width: 1200px)');
+  const syncContentsLayout = () => { contents.open = wideScreen.matches; };
+  syncContentsLayout();
+  wideScreen.addEventListener('change', syncContentsLayout);
+  contents.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    if (!wideScreen.matches) contents.open = false;
+  }));
+}
+if (document.querySelector('.engineering-article, .project-toolbar')) {
+  let pendingFrame = false;
+  const scheduleReadingUpdate = () => {
+    if (pendingFrame) return;
+    pendingFrame = true;
+    requestAnimationFrame(() => { pendingFrame = false; updateReadingNavigation(); });
   };
-  addEventListener('scroll', updateReadingProgress, { passive: true });
-  addEventListener('resize', updateReadingProgress);
-  updateReadingProgress();
+  addEventListener('scroll', scheduleReadingUpdate, { passive: true });
+  addEventListener('resize', scheduleReadingUpdate);
+  addEventListener('load', scheduleReadingUpdate);
+  const toolbar = document.querySelector('.project-toolbar');
+  if (toolbar && typeof ResizeObserver !== 'undefined') new ResizeObserver(scheduleReadingUpdate).observe(toolbar);
+  updateReadingNavigation();
 }

@@ -127,5 +127,11 @@
   "technologyLabel": "Tecnologie",
   "contactLinksLabel": "Contatti e profili social",
   "homeLabel": "Pagina iniziale di Taha Chelly",
-  "browseNotebook": "Sfoglia il quaderno"
+  "browseNotebook": "Sfoglia il quaderno",
+  "navNotebook": "Quaderno",
+  "sectionLink": "Link a questa sezione",
+  "projectSectionsLabel": "Sezioni del progetto",
+  "projectScreenshots": "Schermate",
+  "projectArchitecture": "Come funziona",
+  "projectDecisions": "Scelte tecniche"
 }

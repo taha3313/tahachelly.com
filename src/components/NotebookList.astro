@@ -1,0 +1,18 @@
+---
+import { stories } from '../data/stories';
+import en from '../data/i18n/en.json';
+interface Props { headingLevel?: 2 | 3; }
+const { headingLevel = 2 } = Astro.props;
+const Heading = headingLevel === 3 ? 'h3' : 'h2';
+---
+<div class="notebook-list">{stories.map((story, i) => <article class="notebook-entry">
+  <div class="notebook-entry-copy">
+    <div class="notebook-author"><img src="/taha.webp" width="24" height="24" alt="" loading="lazy" /><span>Taha Chelly</span><span aria-hidden="true">·</span><span>{story.project}</span></div>
+    <Heading><a href={`/writing/${story.slug}/`} data-i18n={`story${i}Title`}>{story.title}</a></Heading>
+    <p data-i18n={`story${i}Summary`}>{story.summary}</p>
+    <div class="notebook-list-meta"><span data-i18n="readingTime">{en.readingTime}</span><a href={`/writing/${story.slug}/`} data-i18n="readNote">{en.readNote}</a></div>
+  </div>
+  <a class="notebook-entry-preview" href={`/writing/${story.slug}/`} aria-label={story.title} data-i18n-aria={`story${i}Title`}>
+    <img src={story.preview} width="480" height="360" alt="" loading="lazy" decoding="async" />
+  </a>
+</article>)}</div>

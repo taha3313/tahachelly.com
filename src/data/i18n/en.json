@@ -127,5 +127,11 @@
   "technologyLabel": "Technology",
   "contactLinksLabel": "Contact and social links",
   "homeLabel": "Taha Chelly home",
-  "browseNotebook": "Browse the notebook"
+  "browseNotebook": "Browse the notebook",
+  "navNotebook": "Notebook",
+  "sectionLink": "Link to this section",
+  "projectSectionsLabel": "Project sections",
+  "projectScreenshots": "Screenshots",
+  "projectArchitecture": "How it works",
+  "projectDecisions": "Decisions"
 }

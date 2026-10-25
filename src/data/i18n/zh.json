@@ -127,5 +127,11 @@
   "technologyLabel": "技术",
   "contactLinksLabel": "联系方式与社交账号",
   "homeLabel": "Taha Chelly 首页",
-  "browseNotebook": "浏览工程笔记"
+  "browseNotebook": "浏览工程笔记",
+  "navNotebook": "笔记",
+  "sectionLink": "此章节的链接",
+  "projectSectionsLabel": "项目章节",
+  "projectScreenshots": "截图",
+  "projectArchitecture": "工作原理",
+  "projectDecisions": "技术决策"
 }

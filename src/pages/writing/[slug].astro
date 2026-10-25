@@ -10,19 +10,28 @@ const next = stories[nextIndex];
 <Base title={`${story.title} | Taha Chelly`} description={story.summary} article>
   <div class="reading-progress" aria-hidden="true"><span></span></div>
   <article class="engineering-article" data-story-index={i}>
-    <a class="notebook-back" href="/writing/" data-i18n="allNotes">{en.allNotes}</a>
+    <div class="article-top-link"><a class="notebook-back" href="/writing/" data-i18n="allNotes">{en.allNotes}</a></div>
     <div class="article-heading">
       <p class="section-kicker"><span data-i18n="notebookTitle">{en.notebookTitle}</span><span aria-hidden="true"> / </span>{story.project}</p>
       <h1 id="hero-title" tabindex="-1" data-i18n={`story${i}Title`}>{story.title}</h1>
       <p class="article-deck" data-i18n={`story${i}Summary`}>{story.summary}</p>
       <div class="article-byline"><img src="/taha.webp" alt="" width="44" height="44" /><div><span><span data-i18n="writtenBy">{en.writtenBy}</span> <a href="/#about">Taha Chelly</a></span><span class="article-reading-time" data-i18n="readingTime">{en.readingTime}</span></div></div>
     </div>
-    <nav class="article-contents" aria-label={en.contentsLabel} data-i18n-aria="contentsLabel">
-      <span class="section-kicker" data-i18n="contentsLabel">{en.contentsLabel}</span>
-      <ol>{story.sections.map((section,j) => <li><a href={`#section-${j}`} data-i18n={`story${i}Section${j}Title`}>{section.title}</a></li>)}</ol>
-    </nav>
-    <div class="article-prose">{story.sections.map((section,j) => <section id={`section-${j}`}><h2 data-i18n={`story${i}Section${j}Title`}>{section.title}</h2><p data-i18n={`story${i}Section${j}Text`}>{section.text}</p></section>)}</div>
-    <aside class="article-sources" aria-labelledby="sources-title"><h2 id="sources-title" data-i18n="sourcesTitle">{en.sourcesTitle}</h2><p data-i18n="articleContext">{en.articleContext}</p><div class="article-source-links"><a href={story.source} data-i18n="sourceReadme">{en.sourceReadme}</a><a href={story.evidence} data-i18n="sourceEvidence">{en.sourceEvidence}</a><a href={story.projectUrl} data-i18n="exploreProject">{en.exploreProject}</a></div></aside>
-    <aside class="article-next"><span class="section-kicker" data-i18n="continueReading">{en.continueReading}</span><h2><a href={`/writing/${next.slug}/`} data-i18n={`story${nextIndex}Title`}>{next.title}</a></h2><p data-i18n={`story${nextIndex}Summary`}>{next.summary}</p></aside>
+    <div class="article-reading-layout">
+      <aside class="article-sidebar">
+        <details class="article-contents" open>
+          <summary><span data-i18n="contentsLabel">{en.contentsLabel}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary>
+          <nav aria-label={en.contentsLabel} data-i18n-aria="contentsLabel">
+            <ol>{story.sections.map((section,j) => <li><a href={`#section-${j}`} data-i18n={`story${i}Section${j}Title`}>{section.title}</a></li>)}</ol>
+          </nav>
+        </details>
+      </aside>
+      <div class="article-body">
+        <div class="article-prose">{story.sections.map((section,j) => <section id={`section-${j}`} tabindex="-1"><h2><span data-i18n={`story${i}Section${j}Title`}>{section.title}</span><a class="heading-permalink" href={`#section-${j}`} aria-label={`${en.sectionLink}: ${section.title}`}><span aria-hidden="true">#</span></a></h2><p data-i18n={`story${i}Section${j}Text`}>{section.text}</p></section>)}</div>
+        <aside class="article-sources" aria-labelledby="sources-title"><h2 id="sources-title" data-i18n="sourcesTitle">{en.sourcesTitle}</h2><p data-i18n="articleContext">{en.articleContext}</p><div class="article-source-links"><a href={story.source} data-i18n="sourceReadme">{en.sourceReadme}</a><a href={story.evidence} data-i18n="sourceEvidence">{en.sourceEvidence}</a><a href={story.projectUrl} data-i18n="exploreProject">{en.exploreProject}</a></div></aside>
+        <div class="article-return"><a class="secondary-button" href="/writing/"><span class="return-arrow" aria-hidden="true">←</span><span data-i18n="allNotes">{en.allNotes}</span></a></div>
+        <aside class="article-next"><span class="section-kicker" data-i18n="continueReading">{en.continueReading}</span><h2><a href={`/writing/${next.slug}/`} data-i18n={`story${nextIndex}Title`}>{next.title}</a></h2><p data-i18n={`story${nextIndex}Summary`}>{next.summary}</p></aside>
+      </div>
+    </div>
   </article>
 </Base>

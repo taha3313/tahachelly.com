@@ -127,5 +127,11 @@
   "technologyLabel": "التقنيات",
   "contactLinksLabel": "التواصل والحسابات الاجتماعية",
   "homeLabel": "الصفحة الرئيسية لطه الشلي",
-  "browseNotebook": "تصفّح دفتر الهندسة"
+  "browseNotebook": "تصفّح دفتر الهندسة",
+  "navNotebook": "الدفتر",
+  "sectionLink": "رابط هذا القسم",
+  "projectSectionsLabel": "أقسام المشروع",
+  "projectScreenshots": "الصور",
+  "projectArchitecture": "آلية العمل",
+  "projectDecisions": "القرارات"
 }

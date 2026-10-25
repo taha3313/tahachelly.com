@@ -7,7 +7,7 @@ const directory = join(root,'src/data/i18n');
 const source=JSON.parse(await readFile(join(directory,'en.json'),'utf8'));
 const normalize=data=>JSON.stringify(Object.entries(data).sort(([a],[b])=>a.localeCompare(b)));
 const remoteSource=await (await request(`/api/translations/${project}/${component}/en/file/`)).json();
-if(normalize(source)!==normalize(remoteSource))throw new Error('Weblate’s English source differs from this checkout. Commit source changes and update the Weblate repository before importing. No local files changed.');
+if(normalize(source)!==normalize(remoteSource))throw new Error('Weblate’s English source differs from this checkout. Sync the reviewed source changes with npm run translations:push before importing. No local files changed.');
 const baselinePath=join(stateDir,'baseline.json');
 let baseline;try{baseline=JSON.parse(await readFile(baselinePath,'utf8'));}catch{throw new Error('Run npm run weblate:connect once to establish the initial translation baseline.');}
 const remote={en:remoteSource};

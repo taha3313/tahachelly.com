@@ -1,1 +1,17 @@
-<header id="top" tabindex="-1"><a class="brand" href="/" aria-label="Taha Chelly home" data-i18n-aria="homeLabel">Taha Chelly<span aria-hidden="true">●</span></a><div class="header-right"><nav aria-label="Main navigation"><a href="/#about" data-i18n="navAbout">About</a><a href="/#work" data-i18n="navWork">Work</a><a href="/#projects" data-i18n="navProjects">Projects</a><a href="/#contact" data-i18n="navContact">Contact</a></nav><label class="language-picker"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select class="language-select" aria-label="Language"><option value="en">EN</option><option value="ar">العربية</option><option value="es">ES</option><option value="de">DE</option><option value="fr">FR</option><option value="it">IT</option><option value="zh">中文</option><option value="ja">日本語</option></select></label><button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.3A8.7 8.7 0 0 1 9.7 3.5a8.7 8.7 0 1 0 10.8 10.8Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button></div></header>
+---
+const inNotebook = Astro.url.pathname.startsWith('/writing/');
+---
+<header id="top" tabindex="-1">
+  <a class="brand" href="/" aria-label="Taha Chelly home" data-i18n-aria="homeLabel">Taha Chelly<span aria-hidden="true">●</span></a>
+  <div class="header-right">
+    <nav aria-label="Main navigation">
+      <a href="/#about" data-i18n="navAbout">About</a>
+      <a href="/#work" data-i18n="navWork">Work</a>
+      <a href="/#projects" data-i18n="navProjects">Projects</a>
+      <a href="/writing/" data-i18n="navNotebook" aria-current={inNotebook ? 'location' : undefined}>Notebook</a>
+      <a href="/#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <label class="language-picker"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select class="language-select" aria-label="Language"><option value="en">EN</option><option value="ar">العربية</option><option value="es">ES</option><option value="de">DE</option><option value="fr">FR</option><option value="it">IT</option><option value="zh">中文</option><option value="ja">日本語</option></select></label>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.3A8.7 8.7 0 0 1 9.7 3.5a8.7 8.7 0 1 0 10.8 10.8Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button>
+  </div>
+</header>
