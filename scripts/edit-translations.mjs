@@ -1,3 +1,4 @@
+import { validateTranslationMarkup } from '../translation-markup.js';
 // Local-only editing tool. Saving changes source JSON; it never builds, commits, or publishes.
 import { createServer } from 'node:http';
 import { readFile, writeFile, rename } from 'node:fs/promises';
@@ -51,6 +52,7 @@ const server = createServer(async (req, res) => {
     let body='';for await (const chunk of req) {body+=chunk;if(Buffer.byteLength(body)>65536)return json(413,{error:'Message is too large.'});}
     const {locale,key,value}=JSON.parse(body);
     if (!locales.includes(locale)||!Object.hasOwn(source,key)||typeof value!=='string'||!value.trim())return json(400,{error:'Choose a valid language and message, and provide a non-empty translation.'});
+    try { validateTranslationMarkup(key, value); } catch (error) { return json(400, {error: error.message}); }
     const escape = text => text.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
     const contains=(text,term)=>new RegExp(`(?<![a-z])${escape(term)}(?![a-z])`,'i').test(text);
     const missing=glossary.terms.filter(term=>contains(source[key],term)&&!contains(value,term));

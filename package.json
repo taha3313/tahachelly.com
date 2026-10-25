@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "node scripts/sync-assets.mjs && astro dev",
-    "build": "npm run check:i18n && node scripts/sync-assets.mjs && astro build && node scripts/mirror-build.mjs",
+    "build": "npm run check:i18n && node scripts/sync-assets.mjs && astro build && node scripts/security-headers.mjs && node scripts/mirror-build.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "check:i18n": "node scripts/check-i18n.mjs",
@@ -18,7 +18,8 @@
     "weblate:credentials": "node scripts/weblate.mjs credentials",
     "weblate:connect": "node scripts/connect-weblate.mjs",
     "translations:pull": "node scripts/pull-weblate.mjs",
-    "translations:push": "node scripts/push-weblate.mjs"
+    "translations:push": "node scripts/push-weblate.mjs",
+    "test:security": "node --test scripts/translation-markup.test.mjs"
   },
   "dependencies": {
     "astro": "7.4.0"
@@ -27,5 +28,11 @@
     "@astrojs/check": "^0.9.9",
     "typescript": "^6.0.3",
     "wrangler": "4.151.0"
+  },
+  "overrides": {
+    "fast-uri": "^3.1.9",
+    "miniflare": {
+      "undici": "^7.30.1"
+    }
   }
 }

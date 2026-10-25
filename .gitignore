@@ -10,3 +10,10 @@ tahachelly-cloudflare.zip
 node_modules/
 .astro/
 public/
+
+# Local Worker state and private environment files
+.wrangler/
+.env
+.env.*
+.dev.vars
+.dev.vars.*

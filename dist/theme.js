@@ -1,3 +1,4 @@
+import { renderTranslationMarkup } from './translation-markup.js?v=security-2026-10-25';
 const toggle = document.querySelector('.theme-toggle');
 let activeCopy;
 const systemTheme = matchMedia('(prefers-color-scheme: dark)');
@@ -44,9 +45,8 @@ function renderTranslatedText(element, value, rtl) {
 }
 
 const languageSelect = document.querySelector('.language-select');
-const languageNames = {en:'English',ar:'العربية',es:'Español',de:'Deutsch',fr:'Français',it:'Italiano',zh:'中文',ja:'日本語'};
 function setLanguage(language) {
-  const locale = translations[language] ? language : 'en';
+  const locale = Object.hasOwn(translations, language) ? language : 'en';
   const rtl = locale === 'ar';
   const dictionary = translations[locale];
   document.documentElement.lang = locale === 'zh' ? 'zh-CN' : locale;
@@ -63,7 +63,7 @@ function setLanguage(language) {
   });
   document.querySelectorAll('[data-i18n-html]').forEach(element => {
     const value = dictionary[element.dataset.i18nHtml];
-    if (value !== undefined) element.innerHTML = value;
+    if (value !== undefined) renderTranslationMarkup(element, value);
   });
   document.querySelectorAll('[data-i18n-alt]').forEach(element => {
     const value = dictionary[element.dataset.i18nAlt];

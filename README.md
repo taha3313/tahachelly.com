@@ -45,3 +45,15 @@ The importer leaves English source strings under code control, detects conflicti
 Use `npm run translations:push` to send changed local source/translation strings into Weblate. It checks for conflicts first, uploads only changed keys, and never publishes the website. English source changes can mark existing translations as needing editing, so review them before importing again. Source synchronization uses the complete monolingual JSON file, briefly unlocks it for the upload, and restores its previous read-only setting afterward. Conflicting source edits are checked before replacement. Source-key deletion is intentionally explicit: remove the corresponding source entries in Weblate rather than silently discarding translation history. Do not use repository **Reset**, which discards Weblate edits. Runtime state remains in the `tahachelly-weblate` Docker volumes and the private configuration directory; stopping containers does not remove it.
 
 Machine-translation engines are separate from Weblate. This setup does not transmit strings to a third-party translation service or consume a paid provider key. Weblate's suggestions/editing workflow is ready for an engine to be configured under its automatic-suggestion settings; machine output should remain suggestions until reviewed.
+
+## Security checks
+
+Run `npm run test:security`, `npm run check`, `npm audit`, and `npx --yes wrangler@4.151.0 deploy --dry-run` before publishing. GitHub Actions repeats these checks using read-only repository permissions and pinned action revisions.
+
+Translations are text by default. Four formatted fields (`heroTitle`, `currentlyAt`, `workHeading`, `contactTitle`) accept only balanced `span`, `br`, and the original `<a href="#work">` link. The browser builds these nodes with DOM methods; it never inserts translation HTML. The editor, Weblate importer, and production build reject other markup or attributes.
+
+The build generates CSP hashes from the six pages' inline scripts and mirrors `_headers` into `dist/`. CSP does not allow inline event handlers, inline styles, frames, objects, or forms. The only third-party script origin is Cloudflare's analytics beacon. HSTS applies to each portfolio hostname for 180 days, without `includeSubDomains` or preload, so independent applications are unaffected. When changing inline scripts, rebuild to refresh the hashes.
+
+A Cloudflare redirect rule in the `http_request_dynamic_redirect` phase upgrades HTTP only for `tahachelly.com` and `www.tahachelly.com`, preserving paths and query strings. It does not change other subdomains. This edge rule is separate from the Git-connected Worker deployment.
+
+Dependency overrides keep the pinned Wrangler toolchain on patched `undici` 7.x and the language tooling on patched `fast-uri` 3.x. Recheck overrides when updating their parent packages. Never run an automatic forced audit fix that downgrades Wrangler.

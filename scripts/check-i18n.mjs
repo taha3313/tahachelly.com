@@ -1,3 +1,4 @@
+import { validateTranslationMarkup } from '../translation-markup.js';
 import { readFile, readdir } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const localeDir = process.env.PORTFOLIO_I18N_DIR || 'src/data/i18n';
@@ -13,6 +14,7 @@ for (const locale of locales) {
   for (const key of keys) {
     const value = copies[locale][key];
     if (typeof value !== 'string' || !value.trim()) { problems.push(`${locale}.${key}: missing or empty`); continue; }
+    try { validateTranslationMarkup(key, value); } catch (error) { problems.push(`${locale}.${key}: ${error.message}`); }
     for (const term of glossary.terms) {
       if (contains(copies.en[key], term) && !contains(value, term)) problems.push(`${locale}.${key}: preserve ${term}`);
     }
