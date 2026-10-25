@@ -143,5 +143,20 @@
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
   "qafiyaEvidence": "4.8 MB · CPU ONNX",
   "achievementPractice": "語彙の記録、復習問題、個別の文法練習を構築し、会話で出会った単語や言語パターンを再び練習できるようにします。",
-  "achievementMultiplayer": "AI チャットと同期したグループ学習活動を提供し、backend サービスを Web アプリのインタラクティブな体験につなげます。"
+  "achievementMultiplayer": "AI チャットと同期したグループ学習活動を提供し、backend サービスを Web アプリのインタラクティブな体験につなげます。",
+  "speakduoCaseLabel": "ケーススタディ",
+  "speakduoCaseTitle": "会話を学びの機会に変える。",
+  "speakduoCaseSummary": "会話のフィードバックから個人練習まで、SpeakDuo の言語学習体験への貢献を紹介します。",
+  "speakduoCaseLink": "SpeakDuo の事例を読む",
+  "speakduoCaseBack": "← 職務経験に戻る",
+  "speakduoCaseContextTitle": "学習者の課題",
+  "speakduoCaseContext": "会話には振り返る材料が多くあります。課題は、その振り返りを役立つものにすることです。フィードバックを理解し、関連する例を見つけ、次に練習する内容を決められる必要があります。",
+  "speakduoCasePracticeTitle": "個人練習",
+  "speakduoCasePractice": "修正例の振り返り、練習の保存、未完了セッションの再開、進捗の確認ができる個人用文法スペースに携わりました。会話後に役立つ練習へ戻れることを重視しました。",
+  "speakduoCaseFeedbackTitle": "会話に合ったフィードバック",
+  "speakduoCaseFeedback": "話し言葉に適した言語フィードバックの改善に携わりました。日常的な表現と実際の間違いを区別し、くだけた表現をすべて誤りとせずに学習を支えることが狙いでした。",
+  "speakduoCaseRoleTitle": "私の貢献",
+  "speakduoCaseRole": "機能の動作から Web アプリでの表示まで、学習体験の実装に携わりました。変更の実装、レビューへの対応、練習とフィードバックの一貫性の確認を行いました。",
+  "speakduoCaseOutcomeTitle": "この仕事が示すこと",
+  "speakduoCaseOutcome": "この仕事は、会話の振り返りとその後の練習をつなげます。学習者の必要を理解し、チームの中で貢献し、出来上がった体験の分かりやすさを確認するという、私の開発姿勢を示しています。"
 }

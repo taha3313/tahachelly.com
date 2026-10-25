@@ -143,5 +143,20 @@
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
   "qafiyaEvidence": "4.8 MB · CPU ONNX",
   "achievementPractice": "Build vocabulary tracking, review exercises, and personalized grammar practice so learners can revisit words and language patterns from their conversations.",
-  "achievementMultiplayer": "Deliver AI chat and synchronized group learning activities, connecting backend services with interactive experiences in the web app."
+  "achievementMultiplayer": "Deliver AI chat and synchronized group learning activities, connecting backend services with interactive experiences in the web app.",
+  "speakduoCaseLabel": "CASE STUDY",
+  "speakduoCaseTitle": "Helping conversations become learning opportunities.",
+  "speakduoCaseSummary": "Selected contributions to SpeakDuo’s language-learning experience, from conversation feedback to personal practice.",
+  "speakduoCaseLink": "Read the SpeakDuo case study",
+  "speakduoCaseBack": "← Back to experience",
+  "speakduoCaseContextTitle": "The learner’s challenge",
+  "speakduoCaseContext": "A conversation gives learners plenty to reflect on. The challenge is making that reflection useful: understanding feedback, finding relevant examples, and deciding what to practice next.",
+  "speakduoCasePracticeTitle": "Personal practice",
+  "speakduoCasePractice": "I contributed to a personal grammar space where learners can revisit correction examples, save practice, resume unfinished sessions, and review their progress. The focus was helping learners return to something useful after a conversation.",
+  "speakduoCaseFeedbackTitle": "Feedback that fits conversation",
+  "speakduoCaseFeedback": "I worked on making language feedback more appropriate for spoken conversation. The aim was to distinguish everyday conversational expressions from genuine mistakes, so feedback supports learning without treating every informal phrase as an error.",
+  "speakduoCaseRoleTitle": "My contribution",
+  "speakduoCaseRole": "I contributed across the learner experience, from the functionality behind features to their presentation in the web app. My work included implementing changes, responding to review, and checking that practice and feedback remained consistent.",
+  "speakduoCaseOutcomeTitle": "What this work represents",
+  "speakduoCaseOutcome": "The work connects conversation review with follow-up practice. It reflects my approach to product development: understand the learner’s need, contribute within a team, and check that the resulting experience makes sense."
 }

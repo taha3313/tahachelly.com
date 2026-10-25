@@ -143,5 +143,20 @@
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
   "qafiyaEvidence": "4.8 MB · CPU ONNX",
   "achievementPractice": "构建词汇跟踪、复习练习和个性化语法练习，让学习者重新练习对话中遇到的单词和语言结构。",
-  "achievementMultiplayer": "交付 AI 聊天和同步小组学习活动，将 backend 服务与网页应用中的互动体验连接起来。"
+  "achievementMultiplayer": "交付 AI 聊天和同步小组学习活动，将 backend 服务与网页应用中的互动体验连接起来。",
+  "speakduoCaseLabel": "案例研究",
+  "speakduoCaseTitle": "让对话成为学习的机会。",
+  "speakduoCaseSummary": "我对 SpeakDuo 语言学习体验的部分贡献，涵盖对话反馈与个人练习。",
+  "speakduoCaseLink": "阅读 SpeakDuo 案例",
+  "speakduoCaseBack": "← 返回工作经历",
+  "speakduoCaseContextTitle": "学习者的需要",
+  "speakduoCaseContext": "一次对话能带来许多值得回顾的内容。挑战在于让回顾有用：理解反馈、找到相关例句，并决定下一步练习什么。",
+  "speakduoCasePracticeTitle": "个人练习",
+  "speakduoCasePractice": "我参与开发个人语法学习空间，让学习者回顾纠错例句、保存练习、继续未完成的学习并查看进度。重点是帮助学习者在对话后继续进行有用的练习。",
+  "speakduoCaseFeedbackTitle": "适合对话的反馈",
+  "speakduoCaseFeedback": "我参与改进语言反馈，使其更适合口语对话。目标是区分日常表达和真正的错误，让反馈支持学习，而不是将每个非正式表达都视为错误。",
+  "speakduoCaseRoleTitle": "我的贡献",
+  "speakduoCaseRole": "我参与学习体验的实现，涵盖功能运作与网页应用呈现。工作包括实施修改、回应评审意见，以及检查练习与反馈的一致性。",
+  "speakduoCaseOutcomeTitle": "这项工作说明了什么",
+  "speakduoCaseOutcome": "这项工作将对话回顾与后续练习连接起来，也体现了我的产品开发方式：理解学习者的需要、在团队中贡献，并检查最终体验是否清晰合理。"
 }

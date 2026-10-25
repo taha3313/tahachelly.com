@@ -143,5 +143,20 @@
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
   "qafiyaEvidence": "4.8 MB · CPU ONNX",
   "achievementPractice": "Wortschatzverfolgung, Wiederholungsübungen und persönliche Grammatikübungen entwickeln, um Wörter und Sprachmuster aus Gesprächen erneut zu üben.",
-  "achievementMultiplayer": "AI-Chat und synchronisierte Gruppenlernaktivitäten umsetzen und dabei backend-Dienste mit interaktiven Erlebnissen in der Web-App verbinden."
+  "achievementMultiplayer": "AI-Chat und synchronisierte Gruppenlernaktivitäten umsetzen und dabei backend-Dienste mit interaktiven Erlebnissen in der Web-App verbinden.",
+  "speakduoCaseLabel": "FALLSTUDIE",
+  "speakduoCaseTitle": "Gespräche zu Lerngelegenheiten machen.",
+  "speakduoCaseSummary": "Ausgewählte Beiträge zu SpeakDuos Lernerlebnis, von Gesprächsfeedback bis zu persönlichen Übungen.",
+  "speakduoCaseLink": "SpeakDuo-Fallstudie lesen",
+  "speakduoCaseBack": "← Zurück zur Berufserfahrung",
+  "speakduoCaseContextTitle": "Was Lernende brauchen",
+  "speakduoCaseContext": "Ein Gespräch bietet viel Stoff zum Nachdenken. Die Herausforderung ist, daraus etwas Nützliches zu machen: Feedback verstehen, passende Beispiele finden und die nächste Übung auswählen.",
+  "speakduoCasePracticeTitle": "Persönliche Übungen",
+  "speakduoCasePractice": "Ich arbeitete an einem persönlichen Grammatikbereich, in dem Lernende Korrekturbeispiele ansehen, Übungen speichern, angefangene Sitzungen fortsetzen und ihren Fortschritt prüfen können. Im Mittelpunkt stand sinnvolles Weiterüben nach dem Gespräch.",
+  "speakduoCaseFeedbackTitle": "Feedback für gesprochene Sprache",
+  "speakduoCaseFeedback": "Ich arbeitete daran, Sprachfeedback besser an Gespräche anzupassen. Ziel war, alltägliche Ausdrücke von echten Fehlern zu unterscheiden, ohne jede informelle Formulierung als falsch zu behandeln.",
+  "speakduoCaseRoleTitle": "Mein Beitrag",
+  "speakduoCaseRole": "Ich wirkte am Lernerlebnis mit, von der Funktionalität bis zur Darstellung in der Web-App. Dazu gehörten Änderungen umsetzen, auf Reviews eingehen und Übungen und Feedback auf Konsistenz prüfen.",
+  "speakduoCaseOutcomeTitle": "Was diese Arbeit zeigt",
+  "speakduoCaseOutcome": "Die Arbeit verbindet das Nachbereiten von Gesprächen mit anschließenden Übungen. Sie zeigt meinen Ansatz: Bedürfnisse der Lernenden verstehen, im Team beitragen und prüfen, ob das Ergebnis stimmig ist."
 }

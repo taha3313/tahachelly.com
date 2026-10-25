@@ -143,5 +143,20 @@
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
   "qafiyaEvidence": "4.8 MB · CPU ONNX",
   "achievementPractice": "Crear seguimiento de vocabulario, ejercicios de repaso y práctica gramatical personalizada para retomar palabras y estructuras de las conversaciones.",
-  "achievementMultiplayer": "Ofrecer chat AI y actividades grupales sincronizadas, conectando los servicios backend con experiencias interactivas en la aplicación web."
+  "achievementMultiplayer": "Ofrecer chat AI y actividades grupales sincronizadas, conectando los servicios backend con experiencias interactivas en la aplicación web.",
+  "speakduoCaseLabel": "CASO DE ESTUDIO",
+  "speakduoCaseTitle": "Convertir conversaciones en oportunidades de aprendizaje.",
+  "speakduoCaseSummary": "Contribuciones a la experiencia de SpeakDuo, desde los comentarios sobre conversaciones hasta la práctica personal.",
+  "speakduoCaseLink": "Leer el caso de SpeakDuo",
+  "speakduoCaseBack": "← Volver a la experiencia",
+  "speakduoCaseContextTitle": "La necesidad del estudiante",
+  "speakduoCaseContext": "Una conversación ofrece mucho que revisar. El reto es hacer útil esa reflexión: comprender los comentarios, encontrar ejemplos relevantes y decidir qué practicar después.",
+  "speakduoCasePracticeTitle": "Práctica personal",
+  "speakduoCasePractice": "Contribuí a un espacio personal de gramática para revisar ejemplos de correcciones, guardar ejercicios, retomar sesiones pendientes y consultar el progreso. El objetivo era ofrecer una práctica útil después de conversar.",
+  "speakduoCaseFeedbackTitle": "Comentarios adecuados para conversar",
+  "speakduoCaseFeedback": "Trabajé en comentarios lingüísticos más apropiados para el habla. El objetivo era distinguir expresiones cotidianas de errores reales, sin considerar incorrecta toda frase informal.",
+  "speakduoCaseRoleTitle": "Mi contribución",
+  "speakduoCaseRole": "Contribuí a la experiencia de aprendizaje, desde el funcionamiento de las herramientas hasta su presentación en la aplicación web. Mi trabajo incluyó implementar cambios, responder a revisiones y comprobar la coherencia de ejercicios y comentarios.",
+  "speakduoCaseOutcomeTitle": "Qué representa este trabajo",
+  "speakduoCaseOutcome": "El trabajo conecta la revisión de conversaciones con la práctica posterior. Refleja mi enfoque: comprender la necesidad del estudiante, contribuir en equipo y comprobar que la experiencia resultante tenga sentido."
 }

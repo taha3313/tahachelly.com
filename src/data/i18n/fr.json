@@ -143,5 +143,20 @@
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
   "qafiyaEvidence": "4.8 MB · CPU ONNX",
   "achievementPractice": "Construire le suivi du vocabulaire, des exercices de révision et une pratique grammaticale personnalisée pour retrouver les mots et les structures rencontrés en conversation.",
-  "achievementMultiplayer": "Livrer un chat AI et des activités de groupe synchronisées, en reliant les services backend aux expériences interactives de l’application web."
+  "achievementMultiplayer": "Livrer un chat AI et des activités de groupe synchronisées, en reliant les services backend aux expériences interactives de l’application web.",
+  "speakduoCaseLabel": "ÉTUDE DE CAS",
+  "speakduoCaseTitle": "Transformer les conversations en occasions d’apprendre.",
+  "speakduoCaseSummary": "Contributions à l’expérience SpeakDuo, du retour sur les conversations à la pratique personnelle.",
+  "speakduoCaseLink": "Lire l’étude de cas SpeakDuo",
+  "speakduoCaseBack": "← Retour à l’expérience",
+  "speakduoCaseContextTitle": "Le besoin des apprenants",
+  "speakduoCaseContext": "Une conversation donne matière à réfléchir. L’enjeu est de rendre cette réflexion utile : comprendre les retours, retrouver des exemples pertinents et choisir quoi pratiquer ensuite.",
+  "speakduoCasePracticeTitle": "Pratique personnelle",
+  "speakduoCasePractice": "J’ai contribué à un espace de grammaire personnel pour revoir des exemples de corrections, enregistrer des exercices, reprendre des séances inachevées et consulter sa progression. L’objectif était de proposer une suite utile à une conversation.",
+  "speakduoCaseFeedbackTitle": "Des retours adaptés à l’oral",
+  "speakduoCaseFeedback": "J’ai travaillé sur des retours linguistiques mieux adaptés à la conversation. L’objectif était de distinguer les expressions courantes des véritables erreurs, sans traiter chaque tournure familière comme une faute.",
+  "speakduoCaseRoleTitle": "Ma contribution",
+  "speakduoCaseRole": "J’ai contribué à l’expérience des apprenants, du fonctionnement des fonctionnalités à leur présentation dans l’application web. Mon travail comprenait l’implémentation, les retours de revue et la vérification de la cohérence des exercices et des commentaires.",
+  "speakduoCaseOutcomeTitle": "Ce que ce travail représente",
+  "speakduoCaseOutcome": "Ce travail relie la révision des conversations à la pratique qui suit. Il reflète mon approche : comprendre les besoins des apprenants, contribuer en équipe et vérifier la cohérence de l’expérience proposée."
 }
