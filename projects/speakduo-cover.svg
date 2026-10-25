@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#EFF2FA"/><stop offset="1" stop-color="#E0E9F3"/></linearGradient>
+    <linearGradient id="blue" x1="625" y1="138" x2="1025" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#416BB0"/><stop offset="1" stop-color="#254A82"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1055" cy="90" r="240" fill="#D3DFEF" opacity=".5"/>
+  <circle cx="98" cy="620" r="190" fill="#DBE5EE"/>
+  <path d="M0 533C280 455 462 663 730 538S1072 440 1200 487" stroke="#C9D6E8" stroke-width="2"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="78" y="106" fill="#315B9A" font-size="28" font-weight="700" letter-spacing="-.7">SpeakDuo</text>
+    <text x="78" y="248" fill="#24344D" font-size="55" font-weight="600" letter-spacing="-2">Conversation.</text>
+    <text x="78" y="315" fill="#315B9A" font-size="55" font-weight="600" letter-spacing="-2">Practice.</text>
+    <text x="78" y="382" fill="#24344D" font-size="55" font-weight="600" letter-spacing="-2">Progress.</text>
+    <path d="M80 431H132" stroke="#315B9A" stroke-width="3" stroke-linecap="round"/>
+    <text x="78" y="497" fill="#536985" font-size="17" letter-spacing="2">SELECTED WORK · TAHA CHELLY</text>
+  </g>
+  <rect x="650" y="143" width="358" height="207" rx="34" fill="url(#blue)"/>
+  <path d="M703 340V388L764 340" fill="#315B9A"/>
+  <circle cx="724" cy="214" r="24" fill="#AFC7EF"/>
+  <path d="M777 207H937M777 223H876" stroke="#E5EEFF" stroke-width="8" stroke-linecap="round"/>
+  <g stroke="#AEC9F4" stroke-width="7" stroke-linecap="round"><path d="M711 280V294M731 267V307M751 276V298M771 254V320M791 265V309M811 275V299M831 261V313M851 272V302M871 280V294M891 268V306M911 275V299M931 281V293"/></g>
+  <rect x="834" y="367" width="264" height="146" rx="26" fill="#FAFCFF"/>
+  <path d="M1045 504V541L1002 504" fill="#FAFCFF"/>
+  <circle cx="887" cy="418" r="16" fill="#DCE7F8"/>
+  <path d="M923 412H1050M923 427H1004M875 463H1048" stroke="#A1B8D8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="656" cy="451" r="58" fill="#F8FAFE"/>
+  <g stroke="#315B9A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M656 427C645 420 632 420 622 425V468C633 463 645 464 656 471C667 464 679 463 690 468V425C680 420 667 420 656 427ZM656 427V471"/><path d="M632 438L644 440M632 449L644 451M668 440L680 438M668 451L680 449"/></g>
+  <g fill="#89A5CF"><circle cx="1074" cy="283" r="7"/><circle cx="593" cy="181" r="5"/><circle cx="755" cy="521" r="5"/></g>
+</svg>

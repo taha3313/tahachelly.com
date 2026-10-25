@@ -242,3 +242,5 @@ html[dir=rtl] .return-arrow{transform:rotate(180deg)}
 .hero-opportunity{max-width:460px;font-size:12px;line-height:1.8;color:var(--muted);margin:18px 0 0}.project-evidence{margin:16px 0;padding:12px 14px;border-inline-start:2px solid var(--accent);background:var(--tint);border-radius:0 6px 6px 0}.project-evidence strong{display:block;font-size:12px;color:var(--accent);line-height:1.6}.project-copy .project-evidence p{font-size:11px;line-height:1.7;margin-top:5px}.work-body h3{font-size:26px;line-height:1.35;letter-spacing:-.8px;font-weight:500;margin:0}.work-body .career-note{grid-column:1/-1}@media(max-width:720px){.work-body h3{font-size:24px}}
 
 .work-body .work-case-link{grid-column:1/-1}
+
+.speakduo-case>.article-heading,.speakduo-case>.article-top-link,.speakduo-case>.article-body{max-width:720px;margin-inline:auto}.case-cover{margin:36px 0 48px;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius)}.case-cover img{display:block;width:100%;height:auto}@media(max-width:720px){.case-cover{margin:24px 0 32px}}

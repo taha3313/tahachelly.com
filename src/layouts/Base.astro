@@ -1,8 +1,9 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-interface Props { title?: string; description?: string; project?: boolean; projectName?: string; repository?: string; article?: boolean; notebook?: boolean; }
-const { title = 'Taha Chelly | Backend & AI Engineer in Tunisia', description = 'Taha Chelly — Backend & AI Engineer in Tunisia. Production Python services, real-time AI applications, and software engineering experience at SpeakDuo.', project = false, projectName, repository, article = false, notebook = false } = Astro.props;
+interface Props { title?: string; description?: string; project?: boolean; projectName?: string; repository?: string; article?: boolean; notebook?: boolean; cover?: string; }
+const { title = 'Taha Chelly | Backend & AI Engineer in Tunisia', description = 'Taha Chelly — Backend & AI Engineer in Tunisia. Production Python services, real-time AI applications, and software engineering experience at SpeakDuo.', project = false, projectName, repository, article = false, notebook = false, cover } = Astro.props;
+const socialImage = cover ? new URL(cover, Astro.site).href : "https://tahachelly.com/taha.png";
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const structuredData = notebook ? { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Engineering notebook', description, url: canonical, inLanguage: 'en' } : article ? { '@context': 'https://schema.org', '@type': 'Article', headline: title.split(' | ')[0], description, url: canonical, inLanguage: 'en', author: { '@type': 'Person', name: 'Taha Chelly', url: 'https://tahachelly.com/' } } : project ? { '@context': 'https://schema.org', '@type': 'SoftwareSourceCode', name: projectName || title.split(' | ')[0], description, url: canonical, codeRepository: repository || 'https://github.com/taha3313/quranic-shazam', programmingLanguage: ['Python', 'TypeScript'], author: { '@type': 'Person', name: 'Taha Chelly' } } : {"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://tahachelly.com/#taha-chelly", "name": "Taha Chelly", "url": "https://tahachelly.com/", "image": "https://tahachelly.com/taha.png", "jobTitle": "Software Engineer", "description": "Software engineer based in Sfax, Tunisia, working on full-stack applications and AI-powered language learning at SpeakDuo.", "worksFor": {"@type": "Organization", "name": "SpeakDuo"}, "homeLocation": {"@type": "Place", "name": "Sfax, Tunisia"}, "sameAs": ["https://www.linkedin.com/in/taha-chelly-983629170/", "https://github.com/taha3313"], "knowsAbout": ["Full-stack development", "Python", "FastAPI", "React", "TypeScript", "Artificial intelligence", "LiveKit"]}, {"@type": "ProfilePage", "@id": "https://tahachelly.com/#profile", "url": "https://tahachelly.com/", "name": "Taha Chelly | Backend & AI Engineer in Tunisia", "mainEntity": {"@id": "https://tahachelly.com/#taha-chelly"}}, {"@type": "WebSite", "@id": "https://tahachelly.com/#website", "url": "https://tahachelly.com/", "name": "Taha Chelly", "publisher": {"@id": "https://tahachelly.com/#taha-chelly"}}]};
 ---
@@ -12,7 +13,7 @@ const structuredData = notebook ? { '@context': 'https://schema.org', '@type': '
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8fafc">
 <meta name="description" content={description}><title>{title}</title><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.png" type="image/png" sizes="256x256"><link rel="apple-touch-icon" href="/favicon.png">
 <script is:inline>try{const t=localStorage.getItem('theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'}</script>
-{!project && !article && !notebook && <link rel="preload" as="image" href="/taha.webp" type="image/webp" fetchpriority="high" />}<link rel="stylesheet" href="/styles.css?v=case-features-2026-10-25"><script is:inline src="/portfolio-i18n.js?v=case-features-2026-10-25" defer></script><script is:inline type="module" src="/theme.js?v=case-features-2026-10-25" defer></script>
+{!project && !article && !notebook && <link rel="preload" as="image" href="/taha.webp" type="image/webp" fetchpriority="high" />}<link rel="stylesheet" href="/styles.css?v=case-review-2026-10-25"><script is:inline src="/portfolio-i18n.js?v=case-review-2026-10-25" defer></script><script is:inline type="module" src="/theme.js?v=case-review-2026-10-25" defer></script>
 
 <link rel="alternate" type="text/markdown" href="https://tahachelly.com/profile.md" title="Taha Chelly — Markdown profile">
 <link rel="canonical" href={canonical}>
@@ -22,14 +23,14 @@ const structuredData = notebook ? { '@context': 'https://schema.org', '@type': '
 <meta property="og:description" content={description}>
 <meta property="og:url" content={canonical}>
 <meta property="og:site_name" content="Taha Chelly">
-<meta property="og:image" content="https://tahachelly.com/taha.png">
-<meta property="og:image:width" content="800">
-<meta property="og:image:height" content="1280">
-<meta property="og:image:alt" content="Taha Chelly, software engineer">
+<meta property="og:image" content={socialImage}>
+<meta property="og:image:width" content={cover ? "1200" : "800"}>
+<meta property="og:image:height" content={cover ? "630" : "1280"}>
+<meta property="og:image:alt" content={cover ? title.split(" | ")[0] : "Taha Chelly, software engineer"}>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content={title}>
 <meta name="twitter:description" content={description}>
-<meta name="twitter:image" content="https://tahachelly.com/taha.png">
+<meta name="twitter:image" content={socialImage}>
 <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />
 </head>
 <body class:list={{ "article-page": article || notebook, "project-page": project }}>

@@ -1,12 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import en from '../../data/i18n/en.json';
-const sections = ['Context', 'Chat', 'Practice', 'Voice', 'Feedback', 'Role', 'Outcome'];
+const sections = ['Context', 'Chat', 'Lessons', 'Vocabulary', 'Practice', 'Voice', 'Activities', 'Role'];
 const copy: Record<string, string> = en;
 ---
-<Base title="SpeakDuo case study | Taha Chelly" description={en.speakduoCaseSummary} article>
+<Base title="SpeakDuo case study | Taha Chelly" description={en.speakduoCaseSummary} article cover="/projects/speakduo-cover.png?v=1">
   <div class="reading-progress" aria-hidden="true"><span></span></div>
-  <article class="engineering-article">
+  <article class="engineering-article speakduo-case">
     <div class="article-top-link"><a class="notebook-back" href="/#work" data-i18n="speakduoCaseBack">{en.speakduoCaseBack}</a></div>
     <div class="article-heading">
       <p class="section-kicker">SpeakDuo / <span data-i18n="speakduoCaseLabel">{en.speakduoCaseLabel}</span></p>
@@ -14,6 +14,7 @@ const copy: Record<string, string> = en;
       <p class="article-deck" data-i18n="speakduoCaseSummary">{en.speakduoCaseSummary}</p>
       <div class="article-byline"><img src="/taha.webp" alt="" width="44" height="44" /><div><span>Taha Chelly · <span data-i18n="role">{en.role}</span></span><span data-i18n="employmentDates">{en.employmentDates}</span></div></div>
     </div>
+    <figure class="case-cover"><img src="/projects/speakduo-cover.webp?v=1" alt={en.speakduoCoverAlt} data-i18n-alt="speakduoCoverAlt" width="1200" height="630" fetchpriority="high" decoding="async" /></figure>
     <div class="article-body">
       <div class="article-prose">{sections.map(section => <section id={`case-${section.toLowerCase()}`}><h2 data-i18n={`speakduoCase${section}Title`}>{copy[`speakduoCase${section}Title`]}</h2><p data-i18n={`speakduoCase${section}`}>{copy[`speakduoCase${section}`]}</p></section>)}</div>
       <div class="article-return"><a class="secondary-button" href="/#work" data-i18n="speakduoCaseBack">{en.speakduoCaseBack}</a></div>
