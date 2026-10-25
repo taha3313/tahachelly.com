@@ -222,7 +222,7 @@ html[dir=rtl] .return-arrow{transform:rotate(180deg)}
   header .brand{grid-column:1;grid-row:1}
   header .language-picker{grid-column:2;grid-row:1}
   header .theme-toggle{grid-column:3;grid-row:1}
-  header nav{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;width:100%;font-size:11px}
+  header nav{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;width:100%;font-size:11px}
   header nav>a,header nav>a:last-child{display:flex;justify-content:center;align-items:center;min-height:44px;padding:8px 2px;text-align:center}
   .notebook-entry{grid-template-columns:minmax(0,1fr) 96px;gap:18px;align-items:start}
   .notebook-entry-preview{margin-top:36px;aspect-ratio:1}
@@ -258,3 +258,6 @@ html[dir=rtl] .return-arrow{transform:rotate(180deg)}
 
 /* Community roles are recorded separately from the club’s educational mission. */
 .community{border-top:1px solid var(--line);padding:56px 0}.community-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}.community h3,.community h4{font-size:17px;font-weight:550;letter-spacing:-.3px;margin:0 0 10px}.community p{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 16px}.community .community-location{font-size:12px;margin-bottom:20px}.community-roles{list-style:none;padding:0;margin:0}.community-roles li{padding:0 0 24px}.community-roles li+li{border-top:1px solid var(--line);padding-top:24px}.community-roles p{font-size:12px;margin:0}@media(max-width:720px){.community{padding:40px 0}.community-grid{grid-template-columns:1fr;gap:32px}}
+
+/* The six homepage sections share their titles with the main menu. */
+header{height:auto;min-height:104px;flex-wrap:wrap;gap:12px;padding-block:20px}header .header-right{flex-wrap:wrap;justify-content:flex-end}header nav{flex-wrap:wrap;justify-content:flex-end;gap:6px 18px}header nav>a{white-space:normal;line-height:1.45}@media(min-width:721px) and (max-width:1200px){header .header-right{width:100%;justify-content:space-between}header nav{flex:1;justify-content:flex-start}}@media(max-width:720px){header{padding-block:16px}header nav{justify-content:stretch}header nav>a{min-width:0;overflow-wrap:anywhere}}

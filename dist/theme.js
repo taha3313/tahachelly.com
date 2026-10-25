@@ -110,7 +110,7 @@ function setLanguage(language) {
   });
   languageSelect.value = locale;
   languageSelect.setAttribute('aria-label', dictionary.languageLabel);
-  document.querySelector('header nav').setAttribute('aria-label', ['navAbout','navWork','navProjects','navNotebook','navContact'].map(key => dictionary[key]).join(' / '));
+  document.querySelector('header nav').setAttribute('aria-label', ['aboutTitle','workTitle','projectsTitle','writingTitle','communityTitle','contactTitle'].map(key => dictionary[key]).join(' / '));
   document.querySelector('.skip-link').textContent = locale === 'en' ? 'Skip to main content' : ({ar:'انتقل إلى المحتوى الرئيسي',es:'Saltar al contenido principal',de:'Zum Hauptinhalt springen',fr:'Aller au contenu principal',it:'Vai al contenuto principale',zh:'跳转到主要内容',ja:'メインコンテンツへ移動'})[locale];
   document.querySelectorAll('.heading-permalink').forEach(link => {
     const heading = link.closest('h2').querySelector('[data-i18n]').textContent;
