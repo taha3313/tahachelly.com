@@ -65,6 +65,10 @@ function setLanguage(language) {
     const value = dictionary[element.dataset.i18nHtml];
     if (value !== undefined) element.innerHTML = value;
   });
+  document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+    const value = dictionary[element.dataset.i18nAlt];
+    if (value !== undefined) element.setAttribute('alt', value);
+  });
   document.querySelectorAll('[data-i18n-aria]').forEach(element => {
     element.setAttribute('aria-label', dictionary[element.dataset.i18nAria]);
   });
@@ -90,10 +94,19 @@ function setLanguage(language) {
     Object.assign(data, { name: dictionary.notebookTitle, description: dictionary.writingTitle, inLanguage: document.documentElement.lang });
     schema.textContent = JSON.stringify(data);
   }
+  if (document.body.classList.contains('project-page')) {
+    const key = location.pathname.includes('/qafiya/') ? 'qafiyaSummary' : 'projectSummary';
+    for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) document.querySelector(selector)?.setAttribute('content', dictionary[key]);
+    const schema = document.querySelector('script[type="application/ld+json"]');
+    const data = JSON.parse(schema.textContent);
+    Object.assign(data, { description: dictionary[key], inLanguage: document.documentElement.lang });
+    schema.textContent = JSON.stringify(data);
+  }
   activeCopy = dictionary;
   updateToggle();
-  document.querySelectorAll('a[target="_blank"][aria-label]').forEach(link => {
-    link.setAttribute('aria-label', `${link.textContent.replace(/↗/g, '').trim()} (${dictionary.opensNewTab})`);
+  document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    const label = link.textContent.replace(/↗/g, '').trim() || link.querySelector('img')?.alt;
+    if (label) link.setAttribute('aria-label', `${label} (${dictionary.opensNewTab})`);
   });
   languageSelect.value = locale;
   languageSelect.setAttribute('aria-label', dictionary.languageLabel);

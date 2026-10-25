@@ -133,5 +133,9 @@
   "projectSectionsLabel": "プロジェクトの構成",
   "projectScreenshots": "画面",
   "projectArchitecture": "仕組み",
-  "projectDecisions": "技術的な判断"
+  "projectDecisions": "技術的な判断",
+  "reciterScreenshotAlt": "Quranic Shazam：朗誦者の認識画面",
+  "verseScreenshotAlt": "Quranic Shazam：節の検索画面",
+  "qafiyaDesktopAlt": "Qafiya：デスクトップでのアラビア詩分析画面",
+  "qafiyaMobileAlt": "Qafiya：スマートフォンでのアラビア詩分析画面"
 }

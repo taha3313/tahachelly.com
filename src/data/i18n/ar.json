@@ -133,5 +133,9 @@
   "projectSectionsLabel": "أقسام المشروع",
   "projectScreenshots": "الصور",
   "projectArchitecture": "آلية العمل",
-  "projectDecisions": "القرارات"
+  "projectDecisions": "القرارات",
+  "reciterScreenshotAlt": "Quranic Shazam: شاشة التعرّف على القارئ",
+  "verseScreenshotAlt": "Quranic Shazam: شاشة اكتشاف الآيات",
+  "qafiyaDesktopAlt": "Qafiya: تحليل الشعر العربي على الحاسوب",
+  "qafiyaMobileAlt": "Qafiya: تحليل الشعر العربي على الهاتف"
 }

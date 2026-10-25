@@ -133,5 +133,9 @@
   "projectSectionsLabel": "项目章节",
   "projectScreenshots": "截图",
   "projectArchitecture": "工作原理",
-  "projectDecisions": "技术决策"
+  "projectDecisions": "技术决策",
+  "reciterScreenshotAlt": "Quranic Shazam：诵读者识别界面",
+  "verseScreenshotAlt": "Quranic Shazam：经文查找界面",
+  "qafiyaDesktopAlt": "Qafiya：电脑上的阿拉伯诗歌分析界面",
+  "qafiyaMobileAlt": "Qafiya：手机上的阿拉伯诗歌分析界面"
 }

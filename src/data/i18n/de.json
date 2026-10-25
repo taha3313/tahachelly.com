@@ -133,5 +133,9 @@
   "projectSectionsLabel": "Projektabschnitte",
   "projectScreenshots": "Screenshots",
   "projectArchitecture": "Funktionsweise",
-  "projectDecisions": "Entscheidungen"
+  "projectDecisions": "Entscheidungen",
+  "reciterScreenshotAlt": "Quranic Shazam: Ansicht zur Rezitatorenerkennung",
+  "verseScreenshotAlt": "Quranic Shazam: Ansicht zur Verssuche",
+  "qafiyaDesktopAlt": "Qafiya: Analyse arabischer Gedichte auf dem Desktop",
+  "qafiyaMobileAlt": "Qafiya: Analyse arabischer Gedichte auf dem Smartphone"
 }
