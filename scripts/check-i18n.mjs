@@ -16,6 +16,11 @@ for (const locale of locales) {
     for (const term of glossary.terms) {
       if (contains(copies.en[key], term) && !contains(value, term)) problems.push(`${locale}.${key}: preserve ${term}`);
     }
+    // Preserve reported measurements across localized decimal separators.
+    for (const number of glossary.evidenceValues?.[key] || []) {
+      const pattern = escaped(number).replace(/\\\./g, '[.,]');
+      if (!new RegExp(`(?<![0-9])${pattern}(?![0-9])`).test(value)) problems.push(`${locale}.${key}: preserve reported value ${number}`);
+    }
     // Links embedded in translated HTML must point at the same destination.
     const links = text => [...text.matchAll(/href="([^"]+)"/g)].map(m => m[1]).sort();
     try { assert.deepEqual(links(value), links(copies.en[key])); } catch { problems.push(`${locale}.${key}: translated HTML changed a link`); }
@@ -37,4 +42,4 @@ for (const file of await sourceFiles('src')) {
   }
 }
 if (problems.length) { console.error(problems.join('\n')); process.exitCode = 1; }
-else console.log(`Translation checks passed: ${locales.length} locales, ${keys.length} keys each, protected terms and embedded links intact.`);
+else console.log(`Translation checks passed: ${locales.length} locales, ${keys.length} keys each, protected terms, reported values, and embedded links intact.`);

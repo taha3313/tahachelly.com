@@ -1,5 +1,61 @@
 {
   "description": "Keep these technology names and technical identifiers in English. Translate the surrounding prose naturally; never translate code, URLs, model names, or units.",
-  "terms": ["Python", "FastAPI", "React", "TypeScript", "Docker", "LiveKit", "PostgreSQL", "ONNX", "ONNX Runtime", "ECAPA-TDNN", "Whisper", "PyArud", "NumPy", "libtashkeel", "WebSockets", "GitHub Actions", "Vite", "Tailwind CSS", "Uvicorn", "CPU", "GPU", "RAM", "ASGI", "CEFR", "Elo", "API", "LLM", "AI", "SQL"],
-  "context": "Personal portfolio for a software engineer. Preserve benchmark scope and caveats, employment vs internship dates, and the public demo's disabled generation status. Avoid word-for-word phrasing that sounds unnatural in the target language."
+  "terms": [
+    "Python",
+    "FastAPI",
+    "React",
+    "TypeScript",
+    "Docker",
+    "LiveKit",
+    "PostgreSQL",
+    "ONNX",
+    "ONNX Runtime",
+    "ECAPA-TDNN",
+    "Whisper",
+    "PyArud",
+    "NumPy",
+    "libtashkeel",
+    "WebSockets",
+    "GitHub Actions",
+    "Vite",
+    "Tailwind CSS",
+    "Uvicorn",
+    "CPU",
+    "GPU",
+    "RAM",
+    "ASGI",
+    "CEFR",
+    "Elo",
+    "API",
+    "LLM",
+    "AI",
+    "SQL",
+    "backend",
+    "frontend",
+    "inference",
+    "speaker embeddings",
+    "cosine similarity",
+    "speech recognition",
+    "voice activity detection",
+    "spaced repetition",
+    "multiplayer",
+    "pretrained",
+    "fine-tuning"
+  ],
+  "context": "Personal portfolio for a software engineer. Preserve benchmark scope and caveats, employment vs internship dates, and the public demo's disabled generation status. Avoid word-for-word phrasing that sounds unnatural in the target language.",
+  "evidenceValues": {
+    "story0Section3Text": [
+      "97.31",
+      "99.10",
+      "781",
+      "2026"
+    ],
+    "story1Section2Text": [
+      "512",
+      "0.1",
+      "142.55",
+      "2/12",
+      "10/12"
+    ]
+  }
 }
