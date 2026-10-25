@@ -2,7 +2,7 @@
 
 Canonical website: https://tahachelly.com/
 
-Taha Chelly is a software engineer based in Sfax, Tunisia. His experience spans full-stack web development, ERP systems, and AI-powered applications.
+Taha Chelly is a software engineer based in Sfax, Tunisia. He focuses on backend and AI engineering: production Python services, real-time AI experiences, and applications from APIs to deployment.
 
 ## Current work
 
@@ -33,7 +33,7 @@ Python, FastAPI, React, TypeScript, PostgreSQL, LiveKit, Docker, LLM application
 - GitHub: https://github.com/taha3313
 - Email: chellytaha@gmail.com
 - CV: https://tahachelly.com/Taha_Chelly.pdf
-- Career interest: Full-time Python developer roles in backend services and AI applications.
+- Career interest: International remote Backend Engineering and AI Engineering roles.
 - Portrait: https://tahachelly.com/taha.png
 
 This is a brief, self-reported professional profile, not a complete CV.

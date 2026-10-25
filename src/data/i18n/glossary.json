@@ -56,6 +56,20 @@
       "142.55",
       "2/12",
       "10/12"
+    ],
+    "reciterEvidence": [
+      "97.31",
+      "99.10"
+    ],
+    "reciterEvidenceContext": [
+      "781"
+    ],
+    "qafiyaEvidence": [
+      "4.8"
+    ],
+    "qafiyaEvidenceContext": [
+      "142.55",
+      "512"
     ]
   }
 }

@@ -9,6 +9,8 @@ export const projects = [
     cardStack: ['React', 'TypeScript', 'FastAPI', 'ONNX', 'Whisper'],
     categoryKey: 'projectCategory',
     summaryKey: 'projectSummary',
+    evidenceKey: 'reciterEvidence' as const,
+    evidenceContextKey: 'reciterEvidenceContext' as const,
   },
   {
     slug: 'qafiya',
@@ -20,5 +22,7 @@ export const projects = [
     cardStack: ['React', 'TypeScript', 'FastAPI', 'PyArud', 'ONNX'],
     categoryKey: 'qafiyaCategory',
     summaryKey: 'qafiyaSummary',
+    evidenceKey: 'qafiyaEvidence' as const,
+    evidenceContextKey: 'qafiyaEvidenceContext' as const,
   },
 ];
