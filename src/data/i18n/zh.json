@@ -152,11 +152,15 @@
   "speakduoCaseContextTitle": "学习者的需要",
   "speakduoCaseContext": "一次对话能带来许多值得回顾的内容。挑战在于让回顾有用：理解反馈、找到相关例句，并决定下一步练习什么。",
   "speakduoCasePracticeTitle": "个人练习",
-  "speakduoCasePractice": "我参与开发个人语法学习空间，让学习者回顾纠错例句、保存练习、继续未完成的学习并查看进度。重点是帮助学习者在对话后继续进行有用的练习。",
+  "speakduoCasePractice": "我使用生成式 AI 创建语言学习练习，并参与个性化语法练习的开发。学习者可以回顾纠错例句、保存练习、继续未完成的学习并查看进度。",
   "speakduoCaseFeedbackTitle": "适合对话的反馈",
   "speakduoCaseFeedback": "我参与改进语言反馈，使其更适合口语对话。目标是区分日常表达和真正的错误，让反馈支持学习，而不是将每个非正式表达都视为错误。",
   "speakduoCaseRoleTitle": "我的贡献",
-  "speakduoCaseRole": "我参与学习体验的实现，涵盖功能运作与网页应用呈现。工作包括实施修改、回应评审意见，以及检查练习与反馈的一致性。",
+  "speakduoCaseRole": "我在 Python 服务和 React 网页应用中实现功能，将 AI 能力连接到可用的学习工具。工作涵盖开发、回应评审意见以及检查学习体验。",
   "speakduoCaseOutcomeTitle": "这项工作说明了什么",
-  "speakduoCaseOutcome": "这项工作将对话回顾与后续练习连接起来，也体现了我的产品开发方式：理解学习者的需要、在团队中贡献，并检查最终体验是否清晰合理。"
+  "speakduoCaseOutcome": "这项工作将对话回顾与后续练习连接起来，也体现了我的产品开发方式：理解学习者的需要、在团队中贡献，并检查最终体验是否清晰合理。",
+  "speakduoCaseChatTitle": "AI 聊天机器人",
+  "speakduoCaseChat": "我开发了面向学习者的 AI 聊天机器人，包括网页应用中的聊天体验。学习者可以通过对话提问，并了解平台提供的学习选项。",
+  "speakduoCaseVoiceTitle": "多语言语音体验",
+  "speakduoCaseVoice": "我参与 AI 语音访谈和多语言反馈功能的开发，帮助学习者练习口语并回顾语言使用情况。我的贡献也包括受支持语言的语法和发音反馈。"
 }

@@ -152,11 +152,15 @@
   "speakduoCaseContextTitle": "Le besoin des apprenants",
   "speakduoCaseContext": "Une conversation donne matière à réfléchir. L’enjeu est de rendre cette réflexion utile : comprendre les retours, retrouver des exemples pertinents et choisir quoi pratiquer ensuite.",
   "speakduoCasePracticeTitle": "Pratique personnelle",
-  "speakduoCasePractice": "J’ai contribué à un espace de grammaire personnel pour revoir des exemples de corrections, enregistrer des exercices, reprendre des séances inachevées et consulter sa progression. L’objectif était de proposer une suite utile à une conversation.",
+  "speakduoCasePractice": "J’ai utilisé l’AI générative pour créer des exercices de langue et contribué à la pratique grammaticale personnalisée. Les apprenants peuvent revoir des exemples, enregistrer des exercices, reprendre des séances et consulter leur progression.",
   "speakduoCaseFeedbackTitle": "Des retours adaptés à l’oral",
   "speakduoCaseFeedback": "J’ai travaillé sur des retours linguistiques mieux adaptés à la conversation. L’objectif était de distinguer les expressions courantes des véritables erreurs, sans traiter chaque tournure familière comme une faute.",
   "speakduoCaseRoleTitle": "Ma contribution",
-  "speakduoCaseRole": "J’ai contribué à l’expérience des apprenants, du fonctionnement des fonctionnalités à leur présentation dans l’application web. Mon travail comprenait l’implémentation, les retours de revue et la vérification de la cohérence des exercices et des commentaires.",
+  "speakduoCaseRole": "J’ai implémenté des fonctionnalités dans les services Python et l’application React, en reliant les capacités AI à des outils d’apprentissage utilisables. Mon travail couvrait le développement, les retours de revue et la vérification de l’expérience.",
   "speakduoCaseOutcomeTitle": "Ce que ce travail représente",
-  "speakduoCaseOutcome": "Ce travail relie la révision des conversations à la pratique qui suit. Il reflète mon approche : comprendre les besoins des apprenants, contribuer en équipe et vérifier la cohérence de l’expérience proposée."
+  "speakduoCaseOutcome": "Ce travail relie la révision des conversations à la pratique qui suit. Il reflète mon approche : comprendre les besoins des apprenants, contribuer en équipe et vérifier la cohérence de l’expérience proposée.",
+  "speakduoCaseChatTitle": "Chatbot AI",
+  "speakduoCaseChat": "J’ai développé un chatbot AI pour les apprenants, y compris son interface dans l’application web. Il permet de poser des questions en conversation et d’explorer les possibilités d’apprentissage de la plateforme.",
+  "speakduoCaseVoiceTitle": "Expériences vocales multilingues",
+  "speakduoCaseVoice": "J’ai travaillé sur les entretiens vocaux AI et les retours multilingues pour aider les apprenants à pratiquer l’oral et à revoir leur usage de la langue. Mes contributions incluent aussi des retours sur la grammaire et la prononciation dans les langues prises en charge."
 }

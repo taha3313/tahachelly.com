@@ -152,11 +152,15 @@
   "speakduoCaseContextTitle": "The learner’s challenge",
   "speakduoCaseContext": "A conversation gives learners plenty to reflect on. The challenge is making that reflection useful: understanding feedback, finding relevant examples, and deciding what to practice next.",
   "speakduoCasePracticeTitle": "Personal practice",
-  "speakduoCasePractice": "I contributed to a personal grammar space where learners can revisit correction examples, save practice, resume unfinished sessions, and review their progress. The focus was helping learners return to something useful after a conversation.",
+  "speakduoCasePractice": "I used generative AI to create language-learning exercises and contributed to personalized grammar practice. Learners can revisit correction examples, save exercises, resume unfinished sessions, and review their progress.",
   "speakduoCaseFeedbackTitle": "Feedback that fits conversation",
   "speakduoCaseFeedback": "I worked on making language feedback more appropriate for spoken conversation. The aim was to distinguish everyday conversational expressions from genuine mistakes, so feedback supports learning without treating every informal phrase as an error.",
   "speakduoCaseRoleTitle": "My contribution",
-  "speakduoCaseRole": "I contributed across the learner experience, from the functionality behind features to their presentation in the web app. My work included implementing changes, responding to review, and checking that practice and feedback remained consistent.",
+  "speakduoCaseRole": "I implemented features across Python services and the React web app, connecting AI capabilities to usable learning tools. My work covered development, review feedback, and checks of the learner experience.",
   "speakduoCaseOutcomeTitle": "What this work represents",
-  "speakduoCaseOutcome": "The work connects conversation review with follow-up practice. It reflects my approach to product development: understand the learner’s need, contribute within a team, and check that the resulting experience makes sense."
+  "speakduoCaseOutcome": "The work connects conversation review with follow-up practice. It reflects my approach to product development: understand the learner’s need, contribute within a team, and check that the resulting experience makes sense.",
+  "speakduoCaseChatTitle": "AI chatbot",
+  "speakduoCaseChat": "I developed an AI chatbot for learners, including the chat experience in the web app. It gives learners a conversational way to ask questions and explore the learning options available on the platform.",
+  "speakduoCaseVoiceTitle": "Multilingual voice experiences",
+  "speakduoCaseVoice": "I worked on AI voice interviews and multilingual feedback features, helping learners practice speaking and review their language use. My contributions also included grammar and pronunciation feedback across supported languages."
 }
