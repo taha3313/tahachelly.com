@@ -175,3 +175,37 @@ if (document.querySelector('.engineering-article, .project-toolbar')) {
   if (toolbar && typeof ResizeObserver !== 'undefined') new ResizeObserver(scheduleReadingUpdate).observe(toolbar);
   updateReadingNavigation();
 }
+
+// Keep the mobile header compact while exposing every section on demand.
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNavigation = document.querySelector('#main-navigation');
+const mobileNavigation = matchMedia('(max-width: 720px)');
+function closeMenu(returnFocus = false) {
+  menuToggle.setAttribute('aria-expanded', 'false');
+  document.querySelector('header').classList.remove('menu-open');
+  if (returnFocus) menuToggle.focus();
+}
+menuToggle.addEventListener('click', () => {
+  const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+  menuToggle.setAttribute('aria-expanded', String(open));
+  document.querySelector('header').classList.toggle('menu-open', open);
+});
+mainNavigation.addEventListener('click', event => {
+  const link = event.target.closest('a');
+  if (!link || !mobileNavigation.matches) return;
+  closeMenu();
+  const target = new URL(link.href);
+  if (target.pathname === location.pathname) {
+    const section = document.querySelector(target.hash);
+    const heading = section?.querySelector('h2');
+    if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+  }
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') closeMenu(true);
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('header') && menuToggle.getAttribute('aria-expanded') === 'true') closeMenu();
+});
+mobileNavigation.addEventListener('change', () => closeMenu());
+document.querySelector('header').classList.add('navigation-ready');

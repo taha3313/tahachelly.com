@@ -261,3 +261,15 @@ html[dir=rtl] .return-arrow{transform:rotate(180deg)}
 
 /* The six homepage sections share their titles with the main menu. */
 header{height:auto;min-height:104px;flex-wrap:wrap;gap:12px;padding-block:20px}header .header-right{flex-wrap:wrap;justify-content:flex-end}header nav{flex-wrap:wrap;justify-content:flex-end;gap:6px 18px}header nav>a{white-space:normal;line-height:1.45}@media(min-width:721px) and (max-width:1200px){header .header-right{width:100%;justify-content:space-between}header nav{flex:1;justify-content:flex-start}}@media(max-width:720px){header{padding-block:16px}header nav{justify-content:stretch}header nav>a{min-width:0;overflow-wrap:anywhere}}
+
+.menu-toggle{display:none}.menu-close{display:none}.menu-toggle[aria-expanded=true] .menu-lines{display:none}.menu-toggle[aria-expanded=true] .menu-close{display:block}
+@media(max-width:720px){
+  header{grid-template-columns:minmax(0,1fr) auto auto auto;gap:10px;min-height:76px;padding:16px 0}
+  header .language-picker{grid-column:2;grid-row:1}header .theme-toggle{grid-column:3;grid-row:1}
+  header.navigation-ready .menu-toggle{grid-column:4;grid-row:1;display:grid;place-items:center;width:36px;height:36px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer}
+  .menu-toggle svg{width:20px;height:20px}
+  header.navigation-ready nav{display:none}
+  header.navigation-ready.menu-open nav{display:flex;flex-direction:column;gap:0;margin-top:6px;padding:8px 12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  header.navigation-ready.menu-open nav>a{justify-content:flex-start;min-height:44px;padding:12px;font-size:13px;text-align:start;border-radius:6px}
+  header.navigation-ready.menu-open nav>a:hover,header.navigation-ready.menu-open nav>a:focus-visible{background:var(--tint);color:var(--accent)}
+}
