@@ -243,4 +243,15 @@ html[dir=rtl] .return-arrow{transform:rotate(180deg)}
 
 .work-body .work-case-link{grid-column:1/-1}
 
-.speakduo-case>.article-heading,.speakduo-case>.article-top-link,.speakduo-case>.article-body{max-width:720px;margin-inline:auto}.case-cover{margin:36px 0 48px;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius)}.case-cover img{display:block;width:100%;height:auto}@media(max-width:720px){.case-cover{margin:24px 0 32px}}
+/* Keep the case study compact and aligned with its reading column. */
+.speakduo-case{max-width:720px;margin-block:36px 64px}
+.speakduo-case>.article-heading,.speakduo-case>.article-top-link,.speakduo-case>.article-body{max-width:720px;margin-inline:auto}
+.speakduo-case .notebook-back{margin-bottom:22px}
+.speakduo-case h1{font-size:42px;line-height:1.15;margin-block:14px 18px}
+.speakduo-case .article-deck{font-size:18px;line-height:1.65;margin-bottom:20px}
+.speakduo-case .article-byline{padding-bottom:20px}
+.case-cover{width:100%;max-width:560px;margin:24px auto 32px;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius)}
+.case-cover img{display:block;width:100%;height:auto}
+.speakduo-case .article-prose section{margin-bottom:32px}
+.speakduo-case .article-prose h2{font-size:23px;margin-bottom:12px}
+@media(max-width:720px){.speakduo-case{margin-block:24px 48px}.speakduo-case h1{font-size:30px;letter-spacing:-.8px}.speakduo-case .article-deck{font-size:16px}.case-cover{max-width:320px;margin-block:20px 28px}.speakduo-case .article-prose h2{font-size:21px}}
