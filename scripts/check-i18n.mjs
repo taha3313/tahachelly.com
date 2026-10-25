@@ -1,9 +1,10 @@
 import { readFile, readdir } from 'node:fs/promises';
 import assert from 'node:assert/strict';
+const localeDir = process.env.PORTFOLIO_I18N_DIR || 'src/data/i18n';
 const locales = ['en', 'ar', 'es', 'de', 'fr', 'it', 'zh', 'ja'];
-const copies = Object.fromEntries(await Promise.all(locales.map(async locale => [locale, JSON.parse(await readFile(`src/data/i18n/${locale}.json`, 'utf8'))])));
+const copies = Object.fromEntries(await Promise.all(locales.map(async locale => [locale, JSON.parse(await readFile(`${localeDir}/${locale}.json`, 'utf8'))])));
 const keys = Object.keys(copies.en).sort();
-const glossary = JSON.parse(await readFile('src/data/i18n/glossary.json', 'utf8'));
+const glossary = JSON.parse(await readFile(`${localeDir}/glossary.json`, 'utf8'));
 const problems = [];
 const escaped = term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const contains = (text, term) => new RegExp(`(?<![a-z])${escaped(term)}(?![a-z])`, 'i').test(text);

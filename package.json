@@ -11,7 +11,14 @@
     "preview": "astro preview",
     "check": "astro check",
     "check:i18n": "node scripts/check-i18n.mjs",
-    "translations:edit": "node scripts/edit-translations.mjs"
+    "translations:edit": "node scripts/edit-translations.mjs",
+    "weblate:start": "node scripts/weblate.mjs start",
+    "weblate:stop": "node scripts/weblate.mjs stop",
+    "weblate:status": "node scripts/weblate.mjs status",
+    "weblate:credentials": "node scripts/weblate.mjs credentials",
+    "weblate:connect": "node scripts/connect-weblate.mjs",
+    "translations:pull": "node scripts/pull-weblate.mjs",
+    "translations:push": "node scripts/push-weblate.mjs"
   },
   "dependencies": {
     "astro": "7.4.0"
