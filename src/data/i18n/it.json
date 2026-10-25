@@ -22,7 +22,7 @@
   "workTitle": "Costruire con uno scopo.",
   "current": "Ruolo attuale",
   "workHeading": "Aiuto le persone a imparare le lingue.<br>Una conversazione alla volta.",
-  "workDescription": "Contribuisco al backend e alle funzionalità AI della piattaforma di lingue SpeakDuo in produzione, collegando i servizi alle esperienze degli studenti.",
+  "workDescription": "Sviluppo funzionalità backend e AI per la piattaforma di lingue SpeakDuo in produzione, lavorando su servizi Python, app web ed esperienze vocali in tempo reale.",
   "remote": "Da remoto",
   "toolkitTitle": "Alcuni strumenti che uso",
   "contactKicker": "LE BELLE IDEE INIZIANO CON UNA CONVERSAZIONE",
@@ -115,8 +115,8 @@
   "contactIntent": "In Tunisia · Disponibile per ruoli internazionali da remoto in Backend & AI.",
   "employmentDates": "Ingegnere del software · Lug. 2026 — Oggi",
   "internshipDates": "In precedenza: tirocinio di fine studi presso SpeakDuo · Gen. — Lug. 2026.",
-  "achievementFeedback": "Sviluppare e mantenere servizi Python e flussi di feedback multilingue, collaborando sul backend e sull’app web.",
-  "achievementVoice": "Integrare voce e apprendimento in tempo reale, con attenzione ad affidabilità, diagnosi e vincoli di rilascio.",
+  "achievementFeedback": "Sviluppare feedback multilingue su grammatica e pronuncia per aiutare gli studenti a rivedere le conversazioni, capire gli errori e scegliere cosa esercitare.",
+  "achievementVoice": "Integrare sottotitoli dal vivo, traduzione e colloqui vocali AI per praticare conversazioni in più lingue e seguire meglio gli scambi parlati.",
   "decisionsKicker": "SFIDE E COMPROMESSI",
   "decisionsTitle": "Il perché delle scelte tecniche.",
   "switchDark": "Attiva il tema scuro",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya: analisi di poesia araba su computer",
   "qafiyaMobileAlt": "Qafiya: analisi di poesia araba su smartphone",
   "remoteOpportunity": "In Tunisia · Disponibile per ruoli internazionali da remoto in Backend & AI.",
-  "workPrivacy": "Questa panoramica descrive i miei contributi in generale; i dettagli proprietari e le metriche interne restano riservati.",
   "exploreProjects": "Esplora i progetti",
   "reciterEvidenceContext": "Riconoscimento del recitatore · valutazione offline su 781 clip riservate; identificazione dei versetti non misurata.",
   "qafiyaEvidenceContext": "Carico locale in container · picco RSS del processo di 142.55 MiB con limite di 512 MiB RAM; non misura il traffico pubblico.",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "Creare tracciamento del vocabolario, esercizi di ripasso e pratica grammaticale personalizzata per ritrovare parole e strutture delle conversazioni.",
+  "achievementMultiplayer": "Realizzare chat AI e attività di apprendimento di gruppo sincronizzate, collegando servizi backend ed esperienze interattive nell’app web."
 }

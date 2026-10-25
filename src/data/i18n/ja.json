@@ -22,7 +22,7 @@
   "workTitle": "目的を持って作る。",
   "current": "在籍中",
   "workHeading": "会話を重ねながら、<br>言語学習をサポートします。",
-  "workDescription": "SpeakDuo の本番言語学習プラットフォームで backend と AI 機能に携わり、サービスと学習体験をつなげています。",
+  "workDescription": "SpeakDuo の本番言語学習プラットフォームで、Python サービス、Web アプリ、リアルタイム音声体験にわたる backend と AI 機能を開発しています。",
   "remote": "リモート",
   "toolkitTitle": "使用しているツール",
   "contactKicker": "良いアイデアは会話から",
@@ -115,8 +115,8 @@
   "contactIntent": "チュニジア在住 · 国際的なリモートの Backend・AI エンジニア職を希望。",
   "employmentDates": "ソフトウェアエンジニア · 2026年7月〜現在",
   "internshipDates": "それ以前：SpeakDuo 卒業研究インターンシップ · 2026年1月〜7月。",
-  "achievementFeedback": "Python サービスと多言語フィードバック処理を開発・保守し、backend と Web アプリで協力。",
-  "achievementVoice": "信頼性、デバッグ、デプロイの制約に配慮して、音声とリアルタイム学習を統合。",
+  "achievementFeedback": "多言語の文法・発音フィードバックを開発し、学習者が会話を振り返り、間違いを理解して次の練習課題を見つけられるようにします。",
+  "achievementVoice": "ライブ字幕、翻訳、AI 音声インタビューを統合し、多言語での会話練習や発話内容の理解を支援します。",
   "decisionsKicker": "課題とトレードオフ",
   "decisionsTitle": "技術的な選択の理由。",
   "switchDark": "ダークモードに切り替える",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya：デスクトップでのアラビア詩分析画面",
   "qafiyaMobileAlt": "Qafiya：スマートフォンでのアラビア詩分析画面",
   "remoteOpportunity": "チュニジア在住 · 国際的なリモートの Backend・AI エンジニア職を希望。",
-  "workPrivacy": "この概要は私の貢献を大まかに紹介しています。独自の実装詳細と内部指標は非公開です。",
   "exploreProjects": "プロジェクトを見る",
   "reciterEvidenceContext": "朗誦者認識 · 未使用の 781 クリップによるオフライン評価。節の認識は測定していません。",
   "qafiyaEvidenceContext": "ローカルコンテナ負荷 · 512 MiB RAM 制限下でプロセス RSS のピークは 142.55 MiB。公開トラフィックのベンチマークではありません。",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "語彙の記録、復習問題、個別の文法練習を構築し、会話で出会った単語や言語パターンを再び練習できるようにします。",
+  "achievementMultiplayer": "AI チャットと同期したグループ学習活動を提供し、backend サービスを Web アプリのインタラクティブな体験につなげます。"
 }

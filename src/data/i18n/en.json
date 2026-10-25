@@ -22,7 +22,7 @@
   "workTitle": "Building with purpose.",
   "current": "Current",
   "workHeading": "Helping people learn languages.<br>One conversation at a time.",
-  "workDescription": "I contribute to the backend and AI features of SpeakDuo’s production language-learning platform, connecting services with learner-facing experiences.",
+  "workDescription": "I build backend and AI features for SpeakDuo’s production language-learning platform, working across Python services, the web app, and real-time voice experiences.",
   "remote": "Remote",
   "toolkitTitle": "Some tools I work with",
   "contactKicker": "GOOD THINGS START WITH A CONVERSATION",
@@ -76,8 +76,8 @@
   "contactIntent": "Based in Tunisia · Open to international remote Backend & AI Engineering roles.",
   "employmentDates": "Software Engineer · Jul 2026 — Present",
   "internshipDates": "Previously: end-of-studies internship at SpeakDuo · Jan — Jul 2026.",
-  "achievementFeedback": "Build and maintain Python services and multilingual feedback workflows, collaborating across the backend and web app.",
-  "achievementVoice": "Integrate speech and real-time learning experiences, with attention to reliability, debugging, and deployment constraints.",
+  "achievementFeedback": "Develop multilingual grammar and pronunciation feedback that helps learners review their conversations, understand mistakes, and identify what to practice next.",
+  "achievementVoice": "Integrate live captions, translation, and AI voice interviews to support conversation practice across languages and make spoken interactions easier to follow.",
   "writingKicker": "Engineering notebook",
   "writingTitle": "Technical decisions, explained.",
   "decisionsKicker": "CHALLENGES & TRADEOFFS",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya: Arabic poetry analysis on desktop",
   "qafiyaMobileAlt": "Qafiya: Arabic poetry analysis on mobile",
   "remoteOpportunity": "Based in Tunisia · Open to international remote Backend & AI Engineering roles.",
-  "workPrivacy": "This overview covers my contributions at a high level; proprietary implementation details and internal metrics remain private.",
   "exploreProjects": "Explore Projects",
   "reciterEvidenceContext": "Reciter recognition · offline evaluation on 781 held-out clips; verse recognition is not measured.",
   "qafiyaEvidenceContext": "Local container workload · 142.55 MiB peak process RSS under a 512 MiB RAM cap; not a public-traffic benchmark.",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "Build vocabulary tracking, review exercises, and personalized grammar practice so learners can revisit words and language patterns from their conversations.",
+  "achievementMultiplayer": "Deliver AI chat and synchronized group learning activities, connecting backend services with interactive experiences in the web app."
 }

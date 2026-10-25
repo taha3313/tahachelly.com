@@ -22,7 +22,7 @@
   "workTitle": "Produkte mit Mehrwert entwickeln.",
   "current": "Aktuell",
   "workHeading": "Ich helfe Menschen, Sprachen zu lernen.<br>Gespräch für Gespräch.",
-  "workDescription": "Ich arbeite am backend und an AI-Funktionen der produktiven Sprachlernplattform SpeakDuo und verbinde Dienste mit Lernerlebnissen.",
+  "workDescription": "Ich entwickle backend- und AI-Funktionen für die produktive Sprachlernplattform SpeakDuo, mit Python-Diensten, der Web-App und Spracherlebnissen in Echtzeit.",
   "remote": "Remote",
   "toolkitTitle": "Einige Tools, mit denen ich arbeite",
   "contactKicker": "GUTE IDEEN BEGINNEN MIT EINEM GESPRÄCH",
@@ -115,8 +115,8 @@
   "contactIntent": "In Tunesien · Offen für internationale Remote-Stellen im Bereich Backend & AI.",
   "employmentDates": "Softwareentwickler · Juli 2026 — Heute",
   "internshipDates": "Zuvor: Abschlusspraktikum bei SpeakDuo · Jan. — Juli 2026.",
-  "achievementFeedback": "Python-Dienste und mehrsprachige Feedbackabläufe entwickeln und warten, gemeinsam am backend und an der Web-App.",
-  "achievementVoice": "Sprachverarbeitung und Echtzeitlernen integrieren, mit Blick auf Zuverlässigkeit, Fehlersuche und Deployment-Grenzen.",
+  "achievementFeedback": "Mehrsprachiges Grammatik- und Aussprachefeedback entwickeln, damit Lernende Gespräche nachbereiten, Fehler verstehen und ihre nächsten Übungsschritte erkennen können.",
+  "achievementVoice": "Live-Untertitel, Übersetzung und AI-Sprachinterviews integrieren, um Gespräche in verschiedenen Sprachen zu üben und gesprochene Interaktionen leichter zu verfolgen.",
   "decisionsKicker": "HERAUSFORDERUNGEN UND ABWÄGUNGEN",
   "decisionsTitle": "Die Gründe für diese technischen Entscheidungen.",
   "switchDark": "Dunkles Design aktivieren",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya: Analyse arabischer Gedichte auf dem Desktop",
   "qafiyaMobileAlt": "Qafiya: Analyse arabischer Gedichte auf dem Smartphone",
   "remoteOpportunity": "In Tunesien · Offen für internationale Remote-Stellen im Bereich Backend & AI.",
-  "workPrivacy": "Dieser Überblick beschreibt meine Beiträge auf hoher Ebene; proprietäre Implementierungsdetails und interne Kennzahlen bleiben vertraulich.",
   "exploreProjects": "Projekte ansehen",
   "reciterEvidenceContext": "Rezitatorerkennung · Offline-Auswertung mit 781 zurückgehaltenen Clips; Verserkennung nicht gemessen.",
   "qafiyaEvidenceContext": "Lokale Container-Last · maximaler Prozess-RSS von 142.55 MiB bei 512 MiB RAM-Limit; kein Test mit öffentlichem Datenverkehr.",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "Wortschatzverfolgung, Wiederholungsübungen und persönliche Grammatikübungen entwickeln, um Wörter und Sprachmuster aus Gesprächen erneut zu üben.",
+  "achievementMultiplayer": "AI-Chat und synchronisierte Gruppenlernaktivitäten umsetzen und dabei backend-Dienste mit interaktiven Erlebnissen in der Web-App verbinden."
 }

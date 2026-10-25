@@ -22,7 +22,7 @@
   "workTitle": "Crear con propósito.",
   "current": "Puesto actual",
   "workHeading": "Ayudo a las personas a aprender idiomas.<br>Una conversación cada vez.",
-  "workDescription": "Contribuyo al backend y a las funciones AI de la plataforma de idiomas SpeakDuo en producción, conectando servicios con experiencias de aprendizaje.",
+  "workDescription": "Desarrollo funciones backend y AI para la plataforma de idiomas SpeakDuo en producción, trabajando con servicios Python, la aplicación web y experiencias de voz en tiempo real.",
   "remote": "Remoto",
   "toolkitTitle": "Algunas herramientas que uso",
   "contactKicker": "LAS BUENAS IDEAS EMPIEZAN CON UNA CONVERSACIÓN",
@@ -115,8 +115,8 @@
   "contactIntent": "Desde Túnez · Abierto a puestos internacionales remotos en Backend & AI.",
   "employmentDates": "Ingeniero de software · Jul. 2026 — Actualidad",
   "internshipDates": "Anteriormente: prácticas de fin de carrera en SpeakDuo · Ene. — Jul. 2026.",
-  "achievementFeedback": "Desarrollar y mantener servicios Python y flujos de comentarios multilingües, colaborando en el backend y la aplicación web.",
-  "achievementVoice": "Integrar voz y aprendizaje en tiempo real, atendiendo a la fiabilidad, la depuración y las restricciones de despliegue.",
+  "achievementFeedback": "Desarrollar comentarios multilingües sobre gramática y pronunciación para que los estudiantes revisen sus conversaciones, comprendan errores y decidan qué practicar después.",
+  "achievementVoice": "Integrar subtítulos en directo, traducción y entrevistas de voz con AI para practicar conversaciones en varios idiomas y seguir mejor las interacciones habladas.",
   "decisionsKicker": "RETOS Y DECISIONES",
   "decisionsTitle": "Por qué funciona así.",
   "switchDark": "Activar el tema oscuro",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya: análisis de poesía árabe en ordenador",
   "qafiyaMobileAlt": "Qafiya: análisis de poesía árabe en móvil",
   "remoteOpportunity": "Desde Túnez · Abierto a puestos internacionales remotos en Backend & AI.",
-  "workPrivacy": "Este resumen presenta mis contribuciones a grandes rasgos; los detalles propietarios y las métricas internas siguen siendo privados.",
   "exploreProjects": "Explorar proyectos",
   "reciterEvidenceContext": "Reconocimiento del recitador · evaluación sin conexión con 781 clips reservados; no mide la identificación de versículos.",
   "qafiyaEvidenceContext": "Carga local en contenedor · RSS máximo del proceso de 142.55 MiB con un límite de 512 MiB RAM; no mide tráfico público.",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "Crear seguimiento de vocabulario, ejercicios de repaso y práctica gramatical personalizada para retomar palabras y estructuras de las conversaciones.",
+  "achievementMultiplayer": "Ofrecer chat AI y actividades grupales sincronizadas, conectando los servicios backend con experiencias interactivas en la aplicación web."
 }

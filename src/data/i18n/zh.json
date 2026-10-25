@@ -22,7 +22,7 @@
   "workTitle": "有目标地创造。",
   "current": "在职",
   "workHeading": "帮助人们学好语言，<br>从一次次对话开始。",
-  "workDescription": "我参与 SpeakDuo 生产语言学习平台的 backend 和 AI 功能开发，将服务与学习体验连接起来。",
+  "workDescription": "我为 SpeakDuo 的生产语言学习平台开发 backend 和 AI 功能，涵盖 Python 服务、网页应用和实时语音体验。",
   "remote": "远程",
   "toolkitTitle": "我使用的一些工具",
   "contactKicker": "美好的想法始于一次交流",
@@ -115,8 +115,8 @@
   "contactIntent": "位于突尼斯 · 寻求国际远程 Backend 与 AI 工程职位。",
   "employmentDates": "软件工程师 · 2026 年 7 月至今",
   "internshipDates": "此前：SpeakDuo 毕业实习 · 2026 年 1 月至 7 月。",
-  "achievementFeedback": "开发和维护 Python 服务及多语言反馈流程，与 backend 和网页应用团队协作。",
-  "achievementVoice": "集成语音与实时学习体验，注重可靠性、问题排查和部署限制。",
+  "achievementFeedback": "开发多语言语法和发音反馈，帮助学习者回顾对话、理解错误，并明确下一步练习的重点。",
+  "achievementVoice": "集成实时字幕、翻译和 AI 语音访谈，支持跨语言会话练习，让口语交流更容易理解。",
   "decisionsKicker": "挑战与取舍",
   "decisionsTitle": "这些技术选择的原因。",
   "switchDark": "切换到深色模式",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya：电脑上的阿拉伯诗歌分析界面",
   "qafiyaMobileAlt": "Qafiya：手机上的阿拉伯诗歌分析界面",
   "remoteOpportunity": "位于突尼斯 · 寻求国际远程 Backend 与 AI 工程职位。",
-  "workPrivacy": "本概述仅介绍我的贡献；专有实现细节和内部指标保持保密。",
   "exploreProjects": "浏览项目",
   "reciterEvidenceContext": "诵读者识别 · 基于 781 个留出音频片段的离线评估；不衡量经文识别。",
   "qafiyaEvidenceContext": "本地容器负载 · 在 512 MiB RAM 限制下，进程 RSS 峰值为 142.55 MiB；并非公共流量基准。",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "构建词汇跟踪、复习练习和个性化语法练习，让学习者重新练习对话中遇到的单词和语言结构。",
+  "achievementMultiplayer": "交付 AI 聊天和同步小组学习活动，将 backend 服务与网页应用中的互动体验连接起来。"
 }

@@ -22,7 +22,7 @@
   "workTitle": "Créer avec du sens.",
   "current": "Poste actuel",
   "workHeading": "J’aide chacun à apprendre des langues.<br>Une conversation à la fois.",
-  "workDescription": "Je contribue au backend et aux fonctionnalités AI de la plateforme de langues SpeakDuo en production, en reliant les services aux expériences des apprenants.",
+  "workDescription": "Je développe des fonctionnalités backend et AI pour la plateforme de langues SpeakDuo en production, entre services Python, application web et expériences vocales en temps réel.",
   "remote": "À distance",
   "toolkitTitle": "Quelques outils que j’utilise",
   "contactKicker": "LES BELLES IDÉES COMMENCENT PAR UNE CONVERSATION",
@@ -76,8 +76,8 @@
   "contactIntent": "Basé en Tunisie · Ouvert aux postes internationaux à distance en Backend & AI.",
   "employmentDates": "Ingénieur logiciel · Juil. 2026 — Aujourd’hui",
   "internshipDates": "Auparavant : stage de fin d’études chez SpeakDuo · Janv. — Juil. 2026.",
-  "achievementFeedback": "Développer et maintenir des services Python et des retours multilingues, en collaboration sur le backend et l’application web.",
-  "achievementVoice": "Intégrer la parole et l’apprentissage en temps réel, avec une attention à la fiabilité, au diagnostic et aux contraintes de déploiement.",
+  "achievementFeedback": "Développer des retours multilingues sur la grammaire et la prononciation pour aider les apprenants à revoir leurs conversations, comprendre leurs erreurs et cibler leur pratique.",
+  "achievementVoice": "Intégrer des sous-titres en direct, la traduction et des entretiens vocaux AI pour pratiquer la conversation dans plusieurs langues et mieux suivre les échanges.",
   "writingKicker": "Carnet d’ingénierie",
   "writingTitle": "Les choix techniques, expliqués.",
   "decisionsKicker": "DÉFIS ET COMPROMIS",
@@ -137,10 +137,11 @@
   "qafiyaDesktopAlt": "Qafiya : analyse de poésie arabe sur ordinateur",
   "qafiyaMobileAlt": "Qafiya : analyse de poésie arabe sur mobile",
   "remoteOpportunity": "Basé en Tunisie · Ouvert aux postes internationaux à distance en Backend & AI.",
-  "workPrivacy": "Cet aperçu présente mes contributions à un niveau général ; les détails propriétaires et les mesures internes restent confidentiels.",
   "exploreProjects": "Explorer les projets",
   "reciterEvidenceContext": "Reconnaissance du récitant · évaluation hors ligne sur 781 extraits réservés ; identification des versets non mesurée.",
   "qafiyaEvidenceContext": "Charge locale en conteneur · pic RSS du processus de 142.55 MiB sous une limite de 512 MiB RAM ; pas un test de trafic public.",
   "reciterEvidence": "97.31% top-1 · 99.10% top-3",
-  "qafiyaEvidence": "4.8 MB · CPU ONNX"
+  "qafiyaEvidence": "4.8 MB · CPU ONNX",
+  "achievementPractice": "Construire le suivi du vocabulaire, des exercices de révision et une pratique grammaticale personnalisée pour retrouver les mots et les structures rencontrés en conversation.",
+  "achievementMultiplayer": "Livrer un chat AI et des activités de groupe synchronisées, en reliant les services backend aux expériences interactives de l’application web."
 }
