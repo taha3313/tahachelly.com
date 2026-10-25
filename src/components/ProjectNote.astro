@@ -1,10 +1,12 @@
 ---
 import { stories } from '../data/stories';
+import en from '../data/i18n/en.json';
 interface Props { project: 'qafiya' | 'quranic-shazam'; }
 const { project } = Astro.props;
-const story = stories[project === 'qafiya' ? 1 : 0];
+const i = project === 'qafiya' ? 1 : 0;
+const story = stories[i];
 ---
-<aside class="project-note-callout" aria-labelledby="project-note-title" lang="en" dir="ltr">
-  <div><span class="section-kicker">ENGINEERING NOTE · 3 MIN READ</span><h2 id="project-note-title"><a href={`/writing/${story.slug}/`}>{story.title}</a></h2><p>{story.summary}</p></div>
-  <a class="button" href={`/writing/${story.slug}/`}>Read the engineering note <span aria-hidden="true">→</span></a>
+<aside class="project-note-callout" aria-labelledby="project-note-title">
+  <div><span class="section-kicker" data-i18n="noteLabel">{en.noteLabel}</span><h2 id="project-note-title"><a href={`/writing/${story.slug}/`} data-i18n={`story${i}Title`}>{story.title}</a></h2><p data-i18n={`story${i}Summary`}>{story.summary}</p></div>
+  <a class="button" href={`/writing/${story.slug}/`}><span data-i18n="readNote">{en.readNote}</span><span aria-hidden="true">→</span></a>
 </aside>

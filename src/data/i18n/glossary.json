@@ -1,0 +1,5 @@
+{
+  "description": "Keep these technology names and technical identifiers in English. Translate the surrounding prose naturally; never translate code, URLs, model names, or units.",
+  "terms": ["Python", "FastAPI", "React", "TypeScript", "Docker", "LiveKit", "PostgreSQL", "ONNX", "ONNX Runtime", "ECAPA-TDNN", "Whisper", "PyArud", "NumPy", "libtashkeel", "WebSockets", "GitHub Actions", "Vite", "Tailwind CSS", "Uvicorn", "CPU", "GPU", "RAM", "ASGI", "CEFR", "Elo", "API", "LLM", "AI", "SQL"],
+  "context": "Personal portfolio for a software engineer. Preserve benchmark scope and caveats, employment vs internship dates, and the public demo's disabled generation status. Avoid word-for-word phrasing that sounds unnatural in the target language."
+}
