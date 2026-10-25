@@ -165,5 +165,15 @@
   "speakduoCaseVocabularyTitle": "词汇与阅读工具",
   "speakduoCaseVocabulary": "我构建了词汇跟踪和复习功能，包括保存的单词、翻译历史和词义查询，也参与生成故事与导入文章的阅读体验、单词填空和语法测验。",
   "speakduoCaseActivitiesTitle": "互动小组活动",
-  "speakduoCaseActivities": "我实现了趣味问答、Missing Word、Word Connect 和偏好投票等学习活动，涵盖活动功能、主持人控制和学习者互动，支持会话中的共同练习。"
+  "speakduoCaseActivities": "我实现了趣味问答、Missing Word、Word Connect 和偏好投票等学习活动，涵盖活动功能、主持人控制和学习者互动，支持会话中的共同练习。",
+  "communityKicker": "社区参与",
+  "communityTitle": "分享我的所学。",
+  "communityClub": "First Skills Club 协会",
+  "communityLocation": "突尼斯，斯法克斯",
+  "communityContext": "一家突尼斯非营利组织，通过同伴带领的 STEAM 活动，帮助青少年学习技术、英语沟通和领导力。",
+  "communitySupervisor": "3D 设计主管",
+  "communitySupervisorDates": "2022年8月 — 2025年8月",
+  "communityCoach": "3D 设计教练",
+  "communityCoachDates": "2019年9月 — 2023年6月",
+  "communityLink": "LinkedIn 上的 First Skills Club"
 }

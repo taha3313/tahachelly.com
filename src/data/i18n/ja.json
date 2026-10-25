@@ -165,5 +165,15 @@
   "speakduoCaseVocabularyTitle": "語彙と読解のツール",
   "speakduoCaseVocabulary": "保存した単語、翻訳履歴、語義検索を含む語彙の記録・復習機能を開発しました。生成した物語や取り込んだ記事の読解体験、単語の穴埋め、文法クイズにも携わりました。",
   "speakduoCaseActivitiesTitle": "対話的なグループ活動",
-  "speakduoCaseActivities": "トリビア、Missing Word、Word Connect、好みの投票などの学習活動を実装しました。活動機能、進行役の操作、学習者のやり取りを通じて、セッションでの共同練習を支援します。"
+  "speakduoCaseActivities": "トリビア、Missing Word、Word Connect、好みの投票などの学習活動を実装しました。活動機能、進行役の操作、学習者のやり取りを通じて、セッションでの共同練習を支援します。",
+  "communityKicker": "コミュニティ活動",
+  "communityTitle": "学んだことを、次の人へ。",
+  "communityClub": "First Skills Club 協会",
+  "communityLocation": "チュニジア・スファックス",
+  "communityContext": "若者が仲間同士で教え合う STEAM 活動を通して、技術、英語でのコミュニケーション、リーダーシップを学ぶチュニジアの非営利団体です。",
+  "communitySupervisor": "3Dデザイン・スーパーバイザー",
+  "communitySupervisorDates": "2022年8月 — 2025年8月",
+  "communityCoach": "3Dデザイン・コーチ",
+  "communityCoachDates": "2019年9月 — 2023年6月",
+  "communityLink": "LinkedIn の First Skills Club"
 }

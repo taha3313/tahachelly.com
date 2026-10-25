@@ -165,5 +165,15 @@
   "speakduoCaseVocabularyTitle": "Vocabulaire et lecture",
   "speakduoCaseVocabulary": "J’ai construit des fonctionnalités de suivi et de révision du vocabulaire : mots enregistrés, historique des traductions et recherche de sens. J’ai aussi travaillé sur la lecture d’histoires générées et d’articles importés, avec textes à compléter et quiz de grammaire.",
   "speakduoCaseActivitiesTitle": "Activités de groupe interactives",
-  "speakduoCaseActivities": "J’ai implémenté des activités dont les quiz trivia, Missing Word, Word Connect et les sondages de préférences. Mes contributions couvrent les fonctionnalités, les commandes des animateurs et les interactions des apprenants pendant les séances."
+  "speakduoCaseActivities": "J’ai implémenté des activités dont les quiz trivia, Missing Word, Word Connect et les sondages de préférences. Mes contributions couvrent les fonctionnalités, les commandes des animateurs et les interactions des apprenants pendant les séances.",
+  "communityKicker": "ENGAGEMENT ASSOCIATIF",
+  "communityTitle": "Transmettre ce que j’ai appris.",
+  "communityClub": "Association First Skills Club",
+  "communityLocation": "Sfax, Tunisie",
+  "communityContext": "Une association tunisienne où les jeunes développent leurs compétences en technologie, en communication en anglais et en leadership grâce à des activités STEAM animées par leurs pairs.",
+  "communitySupervisor": "Superviseur en conception 3D",
+  "communitySupervisorDates": "Août 2022 — août 2025",
+  "communityCoach": "Formateur en conception 3D",
+  "communityCoachDates": "Sept. 2019 — juin 2023",
+  "communityLink": "First Skills Club sur LinkedIn"
 }
