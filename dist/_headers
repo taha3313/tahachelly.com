@@ -1,4 +1,5 @@
 /*
+  Content-Signal: search=yes, ai-input=yes, ai-train=no
   Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com 'sha256-A6yR0ceN8rhCtaDO2oRG97x3r3halV7TOJRRvPgNEHE=' 'sha256-DlVgMF3JOClpboSYEQ31ORbiSKFyOrmR+IbpowH0NAQ=' 'sha256-G49Acd6akU0OnXad/6POtCtDxIOgZrzAvJhvJHuw2g0=' 'sha256-J9GhTW/B0vbiQRxiiF6SMONf6H0IZ/MLnGHJOmTVv5w=' 'sha256-JCns5I2vL3++jmYBIDV6QeplU0o/jn6TnlsWzu2RhYc=' 'sha256-UVmPpknuqJRPi9UsNTi1zuwlA5RidugETLlyrHx/BBQ=' 'sha256-adLWsfFAq9JV/WxOt0Zo9XDKbvPoDH2j1iNOvqKfBO0=' 'sha256-fOYXMSq7+lcLjcYL9EYkUZo+px1C9gGo+LtBXpuATlA='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=15552000
   X-Content-Type-Options: nosniff
@@ -17,3 +18,6 @@
 
 /robots.txt
   Cache-Control: public, max-age=3600, must-revalidate
+
+/
+  Link: </profile.md>; rel="alternate"; type="text/markdown", </llms.txt>; rel="alternate"; type="text/plain"
