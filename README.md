@@ -57,3 +57,5 @@ The build generates CSP hashes from the six pages' inline scripts and mirrors `_
 A Cloudflare redirect rule in the `http_request_dynamic_redirect` phase upgrades HTTP only for `tahachelly.com` and `www.tahachelly.com`, preserving paths and query strings. It does not change other subdomains. This edge rule is separate from the Git-connected Worker deployment.
 
 Dependency overrides keep the pinned Wrangler toolchain on patched `undici` 7.x and the language tooling on patched `fast-uri` 3.x. Recheck overrides when updating their parent packages. Never run an automatic forced audit fix that downgrades Wrangler.
+
+..
