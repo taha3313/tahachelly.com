@@ -50,6 +50,8 @@ Machine-translation engines are separate from Weblate. This setup does not trans
 
 Pushes to `main` automatically start a production Cloudflare Workers Build after the GitHub Actions security and build checks pass. The `deploy` job in `.github/workflows/security.yml` calls the `github-actions-main` Cloudflare deploy hook, whose URL is stored only in the `CLOUDFLARE_DEPLOY_HOOK_URL` repository secret. Pull requests never invoke this hook. The job reports the queued build ID; the final build outcome is visible in Cloudflare Workers Builds. Local edits must be committed and pushed to publish.
 
+For CV updates, replace the root `Taha_Chelly.pdf`, update the download link version and file-size label in `src/components/CVDownload.astro` and the locale files, run `npm run build`, and commit the source plus generated copies before pushing to `main`. Confirm the Cloudflare build succeeds and the live download matches the replacement PDF.
+
 Run `npm run test:security`, `npm run check`, `npm audit`, and `npx --yes wrangler@4.151.0 deploy --dry-run` before publishing. GitHub Actions repeats these checks using read-only repository permissions and pinned action revisions.
 
 Translations are text by default. Four formatted fields (`heroTitle`, `currentlyAt`, `workHeading`, `contactTitle`) accept only balanced `span`, `br`, and the original `<a href="#work">` link. The browser builds these nodes with DOM methods; it never inserts translation HTML. The editor, Weblate importer, and production build reject other markup or attributes.
