@@ -20,3 +20,24 @@ jobs:
       - run: npm audit --audit-level=low
       - run: npx --yes wrangler@4.151.0 deploy --dry-run
       - run: git diff --exit-code -- index.html dist _headers portfolio-i18n.js
+  deploy:
+    needs: security
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    concurrency:
+      group: cloudflare-production
+      cancel-in-progress: false
+    steps:
+      - name: Start Cloudflare production build
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$DEPLOY_HOOK_URL" ]; then
+            echo 'Missing CLOUDFLARE_DEPLOY_HOOK_URL repository secret.' >&2
+            exit 1
+          fi
+          curl --fail --silent --show-error --max-time 60 \
+            --request POST "$DEPLOY_HOOK_URL" --output response.json
+          jq -e '.success == true and (.result.build_uuid | type == "string")' response.json >/dev/null
+          jq -r '"Cloudflare build queued: " + .result.build_uuid' response.json
