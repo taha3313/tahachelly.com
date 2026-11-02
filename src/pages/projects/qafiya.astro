@@ -7,7 +7,7 @@ import Icon from '../../components/Icon.astro';
 import Base from '../../layouts/Base.astro';
 import { projects } from '../../data/projects';
 const project = projects.find(item => item.slug === 'qafiya')!;
-const description = 'An Arabic poetry workshop for classical meter, rhyme, scansion, and local CPU vocalization. Explore Qafiya, built with React, FastAPI, PyArud, and ONNX Runtime.';
+const description = en.qafiyaSummary;
 const captions = ['qafiyaCaptionDesk', 'qafiyaCaptionMobile'];
 const features = [
   { icon: 'book', title: 'qafiyaAnalysisTitle', detail: 'qafiyaAnalysisDetail', number: '01' },
@@ -20,18 +20,18 @@ const features = [
     <a class="text-link" href="/#projects" data-i18n="backProjects">← All projects</a>
     <p class="intro" data-i18n="qafiyaCategory">LANGUAGE · POETRY · AI</p>
     <h1 id="hero-title" tabindex="-1">Qafiya <span lang="ar" dir="rtl">قَافِيَة.</span></h1>
-    <p class="hero-description" data-i18n="qafiyaSummary">An Arabic poetry workshop for classical meter, rhyme, readable scansion, and local vocalization.</p>
-    <p class="project-availability" data-i18n="generationPaused">Analysis is available in the live demo. AI generation is currently disabled.</p>
+    <p class="hero-description" data-i18n="qafiyaSummary">{en.qafiyaSummary}</p>
+    <p class="project-availability" data-i18n="generationPaused">{en.generationPaused}</p>
   </section>
   <ProjectToolbar demo={project.demo} github={project.github} />
   <ProjectNote project="qafiya" />
   <section class="project-section" aria-labelledby="screenshots-title">
     <div class="section-heading"><span class="section-kicker" data-i18n="screenshotsKicker">A LOOK INSIDE</span><h2 id="screenshots-title" data-i18n="qafiyaApproachTitle">From a written verse to its rhythm.</h2></div>
-    <div class="screenshot-grid">{project.screenshots.map((src, i) => <figure class={i === 1 ? 'mobile-screenshot' : undefined}><a href={src} target="_blank" rel="noopener noreferrer"><img src={src} alt={i === 0 ? en.qafiyaDesktopAlt : en.qafiyaMobileAlt} data-i18n-alt={i === 0 ? 'qafiyaDesktopAlt' : 'qafiyaMobileAlt'} width={i === 0 ? 1440 : 390} height={i === 0 ? 1461 : 2388} loading="lazy" /></a><figcaption><Icon name={i === 0 ? 'book' : 'waveform'} /><span data-i18n={captions[i]}>{i === 0 ? 'Writing desk — choose a classical meter and rhyme letter, then inspect the verse.' : 'Responsive Arabic-first poetry analysis on mobile.'}</span></figcaption></figure>)}</div>
+    <div class="screenshot-grid">{project.screenshots.map((src, i) => <figure class={i === 1 ? 'mobile-screenshot' : undefined}><a href={src} target="_blank" rel="noopener noreferrer"><img src={src} alt={i === 0 ? en.qafiyaDesktopAlt : en.qafiyaMobileAlt} data-i18n-alt={i === 0 ? 'qafiyaDesktopAlt' : 'qafiyaMobileAlt'} width={i === 0 ? 1440 : 390} height={i === 0 ? 1713 : 2618} loading="lazy" /></a><figcaption><Icon name={i === 0 ? 'book' : 'waveform'} /><span data-i18n={captions[i]}>{i === 0 ? en.qafiyaCaptionDesk : en.qafiyaCaptionMobile}</span></figcaption></figure>)}</div>
   </section>
   <section class="project-section" aria-labelledby="approach-title">
     <div class="section-heading"><span class="section-kicker" data-i18n="approachKicker">BEHIND THE EXPERIENCE</span><h2 id="approach-title" data-i18n="qafiyaApproachTitle">From a written verse to its rhythm.</h2></div>
-    <div class="project-features">{features.map(feature => <article><span class="feature-mark"><Icon name={feature.icon} /><span class="feature-number">{feature.number}</span></span><h3 data-i18n={feature.title}>{feature.title === 'qafiyaAnalysisTitle' ? 'Analyze classical meter' : feature.title === 'qafiyaTashkeelTitle' ? 'Complete vocalization locally' : 'Drafting is experimental'}</h3><p data-i18n={feature.detail}>{feature.detail === 'qafiyaAnalysisDetail' ? 'Check Arabic verses against 16 classical meters with PyArud. Explore the صدر and عجز, binary scansion, feet, and the requested rawi.' : feature.detail === 'qafiyaTashkeelDetail' ? 'A bundled 4.8 MB libtashkeel ONNX model fills missing vowel marks on the CPU. Supplied vowels remain authoritative; analysis does not call an LLM.' : 'An optional provider adapter drafts poems and targets revisions at failed verses while preserving accepted text. Generation is currently disabled on the public demo.'}</p></article>)}</div>
+    <div class="project-features">{features.map(feature => <article><span class="feature-mark"><Icon name={feature.icon} /><span class="feature-number">{feature.number}</span></span><h3 data-i18n={feature.title}>{feature.title === 'qafiyaAnalysisTitle' ? 'Analyze classical meter' : feature.title === 'qafiyaTashkeelTitle' ? 'Complete vocalization locally' : 'Drafting is experimental'}</h3><p data-i18n={feature.detail}>{en[feature.detail as keyof typeof en]}</p></article>)}</div>
   </section>
   <section class="project-section" aria-labelledby="stack-title">
     <div class="section-heading"><span class="section-kicker" data-i18n="stackKicker">BUILT WITH</span><h2 id="stack-title" data-i18n="stackTitle">The technology behind it.</h2></div>

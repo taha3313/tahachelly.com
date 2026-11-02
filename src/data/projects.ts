@@ -17,7 +17,7 @@ export const projects = [
     name: 'Qafiya · قافية',
     github: 'https://github.com/taha3313/arabic-poetry',
     demo: 'https://qafiya.tahachelly.com/?lang=ar',
-    screenshots: ['/projects/qafiya-desktop.png', '/projects/qafiya-mobile.png'],
+    screenshots: ['/projects/qafiya-desktop.png?v=20261102', '/projects/qafiya-mobile.png?v=20261102'],
     stack: ['React 19', 'TypeScript', 'Vite', 'Python 3.12', 'FastAPI', 'PyArud', 'ONNX Runtime', 'NumPy', 'Docker', 'Cloudflare Pages', 'Render'],
     cardStack: ['React', 'TypeScript', 'FastAPI', 'PyArud', 'ONNX'],
     categoryKey: 'qafiyaCategory',
