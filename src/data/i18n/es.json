@@ -72,7 +72,7 @@
   "qafiyaDeploy": "Alojamiento: frontend en Cloudflare Pages y API Docker en Render. GitHub Actions comprueba el frontend, el backend y el container de producción.",
   "qafiyaTryTitle": "Explora la métrica y la rima.",
   "generationPaused": "Compón, comprueba o detecta metro y rima. La escritura con AI es experimental y depende de la disponibilidad del proveedor.",
-  "cvFormat": "PDF · 129 KB",
+  "cvFormat": "PDF · 111 KB",
   "story0Title": "Cuando un fragmento de audio necesita más contexto",
   "story0Summary": "Separar la identificación del recitador de la búsqueda de aleyas e integrar la incertidumbre en la experiencia de escucha.",
   "story0Section0Title": "Dos preguntas, dos pipelines",

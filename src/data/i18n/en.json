@@ -83,7 +83,7 @@
   "decisionsKicker": "CHALLENGES & TRADEOFFS",
   "decisionsTitle": "Why it works this way.",
   "readNote": "Read the engineering note",
-  "cvFormat": "PDF · 129 KB",
+  "cvFormat": "PDF · 111 KB",
   "story0Title": "When an audio match needs more context",
   "story0Summary": "Separating speaker recognition from verse discovery, and making uncertainty part of the listening flow.",
   "story0Section0Title": "Two questions, two pipelines",

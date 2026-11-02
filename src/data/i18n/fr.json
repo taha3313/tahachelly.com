@@ -83,7 +83,7 @@
   "decisionsKicker": "DÉFIS ET COMPROMIS",
   "decisionsTitle": "Les raisons de ces choix techniques.",
   "readNote": "Lire la note technique",
-  "cvFormat": "PDF · 129 KB",
+  "cvFormat": "PDF · 111 KB",
   "story0Title": "Quand un extrait audio ne suffit pas",
   "story0Summary": "Distinguer l’identification d’une voix de celle d’un verset, et intégrer l’incertitude au parcours d’écoute.",
   "story0Section0Title": "Deux questions, deux pipelines",

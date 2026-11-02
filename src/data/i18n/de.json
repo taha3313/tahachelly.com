@@ -72,7 +72,7 @@
   "qafiyaDeploy": "Hosting: Frontend auf Cloudflare Pages und Docker-API auf Render. GitHub Actions prüft Frontend, Backend und Production Container.",
   "qafiyaTryTitle": "Versmaß und Reim entdecken.",
   "generationPaused": "Verfasse Gedichte oder prüfe und erkenne Versmaß und Reim. AI-Dichten ist experimentell und von der Verfügbarkeit des Anbieters abhängig.",
-  "cvFormat": "PDF · 129 KB",
+  "cvFormat": "PDF · 111 KB",
   "story0Title": "Wenn ein Audioausschnitt mehr Kontext braucht",
   "story0Summary": "Sprechererkennung und Verssuche trennen und Unsicherheit im Ablauf sichtbar machen.",
   "story0Section0Title": "Zwei Fragen, zwei Pipelines",

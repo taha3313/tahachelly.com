@@ -72,7 +72,7 @@
   "qafiyaDeploy": "托管：frontend 位于 Cloudflare Pages，Docker API 位于 Render。GitHub Actions 检查 frontend、backend 和生产 container。",
   "qafiyaTryTitle": "探索格律与押韵。",
   "generationPaused": "创作诗句，检查或识别格律与韵脚。AI 创作仍属实验功能，取决于供应商可用性。",
-  "cvFormat": "PDF · 129 KB",
+  "cvFormat": "PDF · 111 KB",
   "story0Title": "当一段音频还不足以确定结果",
   "story0Summary": "将诵读者识别与经文检索分开处理，并在聆听过程中明确呈现不确定性。",
   "story0Section0Title": "两个问题，两条 pipeline",

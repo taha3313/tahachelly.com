@@ -72,7 +72,7 @@
   "qafiyaDeploy": "ホスティング：frontend は Cloudflare Pages、Docker API は Render で稼働します。GitHub Actions で frontend、backend、本番 container を検証します。",
   "qafiyaTryTitle": "韻律と脚韻を探る。",
   "generationPaused": "作詩、韻律と脚韻の検証・検出ができます。AI 作詩は実験的で、提供元の利用状況に依存します。",
-  "cvFormat": "PDF · 129 KB",
+  "cvFormat": "PDF · 111 KB",
   "story0Title": "短い音声だけでは判断できないとき",
   "story0Summary": "朗誦者の識別と章句の検索を分け、不確かさを聴取の流れの中で伝える。",
   "story0Section0Title": "2つの問いに、2つの pipeline",
